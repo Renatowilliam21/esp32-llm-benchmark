@@ -1,0 +1,91 @@
+﻿ID_Tarefa;Criterio;Peso_Percentual;Regra
+T01;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T01;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T01;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T02;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T02;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T02;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T03;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T03;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T03;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T04;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T04;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T04;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T05;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T05;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T05;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T06;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T06;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T06;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T07;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T07;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T07;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T08;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T08;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T08;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T09;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T09;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T09;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T10;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T10;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T10;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T11;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T11;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T11;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T12;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T12;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T12;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T13;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T13;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T13;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T14;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T14;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T14;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T15;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T15;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T15;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T16;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T16;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T16;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T17;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T17;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T17;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T18;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T18;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T18;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T19;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T19;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T19;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T20;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T20;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T20;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T21;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T21;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T21;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T22;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T22;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T22;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T23;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T23;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T23;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T24;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T24;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T24;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T25;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T25;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T25;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T26;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T26;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T26;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T27;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T27;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T27;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T28;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T28;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T28;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T29;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T29;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T29;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
+T30;Corretude funcional;70;Proporção ponderada dos casos de teste aprovados. Casos têm peso interno 1 nesta versão.
+T30;Compilação/integração;20;Compila no ambiente definido e integra com stubs/mocks/bibliotecas exigidos sem alterações manuais na solução.
+T30;Aderência à especificação;10;Respeita assinatura/contrato, requisitos explícitos e não remove comportamento necessário para fazer os testes passarem.
