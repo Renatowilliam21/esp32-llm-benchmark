@@ -1,0 +1,38 @@
+from dataclasses import dataclass
+from pathlib import Path
+import os
+
+@dataclass(frozen=True)
+class ProviderConfig:
+    id: str
+    name: str
+    model: str
+    max_output_tokens: int
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+PROMPTS_DIR = PROJECT_ROOT / "03-prompts" / "prompts"
+OUTPUT_DIR = PROJECT_ROOT / "05-respostas-llms"
+RESULTS_DIR = PROJECT_ROOT / "06-resultados" / "brutos"
+
+PROVIDERS = {
+    "openai": ProviderConfig(
+        id="LLM01",
+        name="GPT-5.6-Sol",
+        model=os.getenv("OPENAI_MODEL", "gpt-5.6-sol"),
+        max_output_tokens=int(os.getenv("OPENAI_MAX_OUTPUT_TOKENS", "8192")),
+    ),
+    "deepseek": ProviderConfig(
+    id="LLM02",
+    name="DeepSeek-V4-Pro",
+    model=os.getenv("DEEPSEEK_MODEL", "deepseek-v4-pro"),
+    max_output_tokens=int(
+        os.getenv("DEEPSEEK_MAX_OUTPUT_TOKENS", "8192")
+    ),
+    "anthropic": ProviderConfig(
+        id="LLM03",
+        name="Claude-Sonnet-5",
+        model=os.getenv("ANTHROPIC_MODEL", "claude-sonnet-5"),
+        max_output_tokens=int(os.getenv("ANTHROPIC_MAX_OUTPUT_TOKENS", "8192")),
+    ),
+}

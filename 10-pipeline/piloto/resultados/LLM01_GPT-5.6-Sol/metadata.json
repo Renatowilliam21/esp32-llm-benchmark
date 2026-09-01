@@ -1,0 +1,21 @@
+{
+  "piloto": true,
+  "provedor": "openai",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T11:03:55.491776+00:00",
+  "duracao_s": 4.951397,
+  "status": "sucesso",
+  "usage": {
+    "input_tokens": 86,
+    "output_tokens": 29,
+    "total_tokens": 115
+  },
+  "stop_reason": "completed",
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "erro": null
+}

@@ -1,0 +1,20 @@
+{
+  "piloto": true,
+  "provedor": "anthropic",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T11:58:32.749857+00:00",
+  "duracao_s": 2.897111,
+  "status": "sucesso",
+  "usage": {
+    "input_tokens": 142,
+    "output_tokens": 50
+  },
+  "stop_reason": "end_turn",
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "erro": null
+}

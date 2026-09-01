@@ -1,0 +1,11 @@
+﻿ID;Ação;Status;Observação
+P01;Instalar dependências;Pendente;pip install -r requirements.txt
+P02;Criar .env com as 3 chaves;Pendente;Não versionar o arquivo
+P03;Confirmar prompts T01–T30;Pendente;03-prompts/prompts/
+P04;Executar pilot_runner.py;Pendente;Prompt fora do benchmark
+P05;Verificar resultados do piloto;Pendente;3 provedores
+P06;Registrar python --version;Pendente;Metadado do ambiente
+P07;Gerar requirements-lock.txt;Pendente;pip freeze
+P08;Revisar modelo retornado pelas APIs;Pendente;Checar metadata.json
+P09;Commit de congelamento;Pendente;Antes das 90 chamadas
+P10;Iniciar Etapa 7;Pendente;Somente após piloto aprovado

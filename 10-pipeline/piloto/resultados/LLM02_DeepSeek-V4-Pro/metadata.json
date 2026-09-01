@@ -1,0 +1,21 @@
+{
+  "piloto": true,
+  "provedor": "deepseek",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T11:51:59.237005+00:00",
+  "duracao_s": 4.34621,
+  "status": "sucesso",
+  "usage": {
+    "input_tokens": 169,
+    "output_tokens": 140,
+    "total_tokens": 309
+  },
+  "stop_reason": "stop",
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "erro": null
+}

@@ -1,0 +1,14 @@
+from config import PROVIDERS
+from .openai_provider import OpenAIProvider
+from .gemini_provider import GeminiProvider
+from .anthropic_provider import AnthropicProvider
+
+def build_provider(name: str):
+    cfg = PROVIDERS[name]
+    if name == "openai":
+        return OpenAIProvider(cfg.model, cfg.max_output_tokens)
+    if provider_name == "deepseek":
+        return GeminiProvider(cfg.model, cfg.max_output_tokens)
+    if name == "anthropic":
+        return AnthropicProvider(cfg.model, cfg.max_output_tokens)
+    raise ValueError(f"Provedor desconhecido: {name}")
