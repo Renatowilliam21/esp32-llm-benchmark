@@ -1,0 +1,4 @@
+﻿ID;Modelo;Fornecedor;Categoria;Interface;Identificador;Configuração_Geração;Justificativa
+LLM01;GPT-5.6 Sol;OpenAI;Proprietário / fronteira;API / nuvem;gpt-5.6-sol;"Uma resposta; sem ferramentas";Modelo proprietário de fronteira.
+LLM02;Gemini 2.5 Pro;Google;Proprietário / raciocínio e código;API / nuvem;gemini-2.5-pro;"Uma resposta; sem ferramentas";Segundo fornecedor proprietário.
+LLM03;Claude Sonnet 5;Anthropic;Proprietário / forte em código;API / nuvem;claude-sonnet-5;"Uma resposta; sem ferramentas";"Substitui a condição local; Anthropic destaca avanços em coding, reasoning e tool use."

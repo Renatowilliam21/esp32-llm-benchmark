@@ -1,0 +1,11 @@
+﻿Campo;LLM01_GPT;LLM02_Gemini;LLM03_Claude;Regra
+Execução;Nuvem/API;Nuvem/API;Nuvem/API;"As três condições passam a ser remotas; hardware local não é variável de inferência."
+Modelo;GPT-5.6 Sol;Gemini 2.5 Pro;Claude Sonnet 5;Registrar exatamente o modelo usado na data da coleta.
+Model ID;gpt-5.6-sol;gemini-2.5-pro;claude-sonnet-5;Preferir identificador fixo/snapshot se o fornecedor oferecer.
+Tentativas por tarefa;1;1;1;Sem segunda tentativa.
+Ferramentas externas;Desabilitadas;Desabilitadas;Desabilitadas;Sem web, execução de código, arquivos externos ou agentes.
+Feedback corretivo;Não;Não;Não;Não fornecer erros ou testes à LLM.
+Temperatura/parâmetros;Registrar valor real;Registrar valor real;Registrar/omitir conforme API;"Não forçar falsa equivalência entre APIs; registrar diferenças."
+Max output tokens;Definir no piloto;Definir no piloto;Definir no piloto;Usar limite suficiente para a maior tarefa e mantê-lo fixo por modelo.
+Data/hora;;;;Registrar cada chamada.
+Versão SDK/API;;;;Registrar antes da coleta.
