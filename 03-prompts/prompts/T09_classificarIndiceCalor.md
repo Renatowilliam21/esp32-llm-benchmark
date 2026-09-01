@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T09 — classificarIndiceCalor
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+String classificarIndiceCalor(float indiceCalor);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Se NaN, retorne String vazia. Caso contrário: <=27 normal; >27 e <=32 atencao; >32 e <=41 atencao_extrema; >41 e <=54 perigo; >54 perigo_extremo.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use exatamente os textos: normal, atencao, atencao_extrema, perigo, perigo_extremo.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

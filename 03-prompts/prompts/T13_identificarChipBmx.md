@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T13 — identificarChipBmx
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+uint8_t identificarChipBmx(uint8_t endereco);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Leia via I2C o registrador 0xD0 do dispositivo no endereço informado. Use endTransmission(false). Se a transmissão falhar ou nenhum byte estiver disponível após solicitar 1 byte, retorne 0. Caso contrário, retorne o byte recebido.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use Wire; não reinicialize o barramento.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

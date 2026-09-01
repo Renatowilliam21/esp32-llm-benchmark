@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T01 — passaTesteDegrau
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+bool passaTesteDegrau(float novoValor, float &ultimoValor, float limite, unsigned long &contadorRejeicoes);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente uma função que aceite a primeira leitura quando ultimoValor for NaN; nas leituras seguintes, aceite apenas quando a diferença absoluta entre novoValor e ultimoValor for menor ou igual a limite. Quando aceita, atualize ultimoValor. Quando rejeitada, preserve ultimoValor e incremente contadorRejeicoes.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+C++/Arduino; pode usar isnan() e fabs(); não usar delay().
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

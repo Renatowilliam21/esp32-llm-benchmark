@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T16 — calcularIndiceCalor
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+float calcularIndiceCalor(float temperaturaC, float umidadeRelativa);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Se temperaturaC < 26.7, retorne a própria temperatura. Caso contrário, converta para Fahrenheit e aplique a regressão NOAA: HI=-42.379+2.04901523*T+10.14333127*RH-0.22475541*T*RH-0.00683783*T*T-0.05481717*RH*RH+0.00122874*T*T*RH+0.00085282*T*RH*RH-0.00000199*T*T*RH*RH. Converta o resultado para Celsius. Se o resultado final for menor que -50 ou maior que 100, retorne NAN.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Não arredonde.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

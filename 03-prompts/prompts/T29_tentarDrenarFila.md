@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T29 — tentarDrenarFila
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void tentarDrenarFila();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Se EEPROM estiver disponível, processe o registro mais antigo pendente. Se totalRegistros==0, retorne. Se o registro falhar no checksum, descarte-o, decremente total e salve controle. Se já estiver marcado como enviado, apenas remova logicamente da fila. Caso contrário, monte JSON e envie aos dois destinos configurados; remova o registro somente quando ambos tiverem sucesso. Em sucesso, marque enviado e regrave antes de decrementar a fila. Se EEPROM estiver indisponível, aplique lógica equivalente ao único registroPendenteRAM, mantendo-o quando houver falha parcial.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere lerRegistro, gravarRegistro, montarJSON, enviarParaUmServidor, salvarControleEEPROM e estado global da fila.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

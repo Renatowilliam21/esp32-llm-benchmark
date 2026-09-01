@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T23 — inicializarSensores
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void inicializarSensores();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente rotina de inicialização tolerante a falhas para DHT22, BME280/BMP280, AHT10, SHT41, VEML7700, ENS160, RTC e EEPROM. Diferencie BME280 (ID 0x60) de BMP280 (ID 0x58), tente endereços I2C alternativos 0x76/0x77, use ENS160 em 0x52 e fallback 0x53, configure SHT41 em alta precisão sem heater, mantenha LDR como fallback se VEML falhar, ajuste RTC para data/hora de compilação se lostPower(), configure ADC com 12 bits e ADC_11db e atualize flags de disponibilidade/saúde.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use objetos e flags globais correspondentes; ausência de um sensor não pode abortar toda a rotina.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

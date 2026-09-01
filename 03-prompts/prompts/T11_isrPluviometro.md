@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T11 — isrPluviometro
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void IRAM_ATTR isrPluviometro();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente ISR para incrementar pulsosPluviometro somente quando millis()-ultimoPulsoPluviometro > 15. Quando o pulso for aceito, atualize ultimoPulsoPluviometro.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere globais: volatile unsigned long pulsosPluviometro; volatile unsigned long ultimoPulsoPluviometro; ISR deve ser curta e não bloqueante.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

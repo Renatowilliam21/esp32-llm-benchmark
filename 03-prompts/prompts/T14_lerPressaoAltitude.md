@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T14 — lerPressaoAltitude
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void lerPressaoAltitude(float &pressaoHpa, float &altitudeM);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Priorize BME280 quando bmeDisponivel && bmeSaudavel. Caso contrário, use BMP280 quando bmpDisponivel && bmpSaudavel. Pressão lida em Pa deve ser convertida para hPa. Se nenhum sensor estiver utilizável ou a pressão estiver fora de PRESSAO_MIN_VALIDA..PRESSAO_MAX_VALIDA, retorne NAN em pressão e altitude.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere globais bme, bmp, bmeDisponivel, bmeSaudavel, bmpDisponivel, bmpSaudavel, PRESSAO_MIN_VALIDA e PRESSAO_MAX_VALIDA.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

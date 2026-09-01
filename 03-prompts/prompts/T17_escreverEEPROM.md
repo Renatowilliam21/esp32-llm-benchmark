@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T17 — escreverEEPROM
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void escreverEEPROM(uint16_t endereco, uint8_t valor);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Escreva um byte em EEPROM AT24C32 no endereço I2C 0x50. O endereço interno possui 16 bits e deve ser enviado primeiro byte alto e depois byte baixo, seguido do valor. Finalize a transmissão e aguarde 5 ms para o ciclo de gravação.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use Wire e delay(5) somente para o ciclo de gravação da EEPROM.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

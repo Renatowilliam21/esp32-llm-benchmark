@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T28 — enviarParaUmServidor
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+bool enviarParaUmServidor(const String &url, const String &token, const String &json, String &status);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Se url ou token estiver vazio, não faça requisição, defina status='nao configurado' e retorne true. Para http:// use cliente HTTP normal; para https:// use WiFiClientSecure. Configure connect timeout de 8000 ms e timeout de 60000 ms, Content-Type application/json e header X-API-Token. Faça POST do JSON. Retorne true apenas para códigos 2xx. Para códigos HTTP de erro ou erro de transporte, retorne false e preencha status com informação útil.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use HTTPClient; em HTTPS é permitido setInsecure() para reproduzir o comportamento experimental.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

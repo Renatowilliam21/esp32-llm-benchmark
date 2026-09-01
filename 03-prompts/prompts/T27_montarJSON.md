@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T27 — montarJSON
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+String montarJSON(const RegistroMeteorologico &r);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Monte JSON com ArduinoJson representando o registro meteorológico. Inclua somente campos numéricos que não sejam NaN. Inclua tipo_agregacao='agregado'. Para ITGU, ITU e índice de calor, inclua também suas classificações quando o índice existir. Se r.ano>0, inclua registrado_em no formato YYYY-MM-DD HH:MM:SS. AQI deve ser serializado como inteiro arredondado.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere funções classificar() e classificarIndiceCalor(); use ArduinoJson.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

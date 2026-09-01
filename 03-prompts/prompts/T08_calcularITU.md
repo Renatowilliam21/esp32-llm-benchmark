@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T08 — calcularITU
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+float calcularITU(float temperaturaC, float umidadeRelativa);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Calcule ITU = 0.8*T + (UR/100.0)*(T-14.3) + 46.3.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Retorne float; não arredonde o resultado.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

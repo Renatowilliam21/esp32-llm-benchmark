@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T12 — isrAnemometro
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void IRAM_ATTR isrAnemometro();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente ISR para incrementar pulsosAnemometro somente quando millis()-ultimoPulsoAnemometro > 5. Quando aceito, atualize ultimoPulsoAnemometro.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere globais volatile unsigned long pulsosAnemometro e ultimoPulsoAnemometro; não usar delay().
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

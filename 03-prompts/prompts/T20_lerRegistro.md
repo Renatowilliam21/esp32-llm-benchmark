@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T20 — lerRegistro
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+bool lerRegistro(uint16_t indice, RegistroMeteorologico &registro);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Leia da EEPROM todos os bytes de RegistroMeteorologico a partir de ENDERECO_DADOS + indice*TAM_REGISTRO usando lerEEPROM(). Após reconstruir a estrutura, salve o checksum armazenado, recalcule com calcularChecksum(registro) e retorne verdadeiro somente quando forem iguais.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere ENDERECO_DADOS, TAM_REGISTRO, lerEEPROM() e calcularChecksum() já definidos.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

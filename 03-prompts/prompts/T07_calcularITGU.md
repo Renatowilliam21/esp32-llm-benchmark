@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T07 — calcularITGU
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+float calcularITGU(float temperaturaC, float umidadeRelativa);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Calcule primeiro o ponto de orvalho pela mesma fórmula de Magnus definida nesta tarefa e depois calcule ITGU = temperaturaC + 0.36*pontoOrvalho + 41.5.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+A implementação pode criar função auxiliar local/externa.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

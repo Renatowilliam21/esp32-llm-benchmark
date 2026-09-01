@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T22 — loop
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void loop();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente orquestração baseada em millis(): alimente watchdog, processe servidor administrativo e comandos seriais; se Wi-Fi estiver desconectado, tente reconectar e retorne; execute coletarAmostra quando INTERVALO_COLETA vencer; gravarRegistroPendente quando INTERVALO_AGREGACAO vencer; tentarDrenarFila quando INTERVALO_ENVIO vencer. Atualize os timestamps correspondentes apenas quando cada ação for disparada.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere globais server, ultimaColeta, ultimaAgregacao, ultimaTentativaEnvio e constantes INTERVALO_COLETA/AGREGACAO/ENVIO; evite delay no fluxo normal.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

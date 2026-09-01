@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T19 — calcularChecksum
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+uint32_t calcularChecksum(const RegistroMeteorologico &registro);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Calcule checksum sobre a representação em bytes do RegistroMeteorologico, excluindo os bytes do próprio campo checksum, que é o último campo uint32_t da estrutura. Inicie soma=0 e, para cada byte considerado, faça soma=(soma*31)+byte. Retorne soma.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere que checksum é o último campo da struct e use sizeof(RegistroMeteorologico)-sizeof(uint32_t).
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

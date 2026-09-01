@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T30 — configurarServidorAdmin
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void configurarServidorAdmin();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Configure servidor WebServer embarcado. GET / deve responder 200 text/html com página administrativa mostrando estado da fila/buffer, disponibilidade dos sensores, fonte de ambiente e status de envio, além de formulário para URL/token local e de produção. POST /salvar deve atualizar os quatro valores, persistir em Preferences e responder com redirecionamento HTTP 303 para /. Inicie o servidor ao final.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere objeto global server e Preferences; evite adicionar exposição desnecessária de segredos fora dos campos exigidos para configuração.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

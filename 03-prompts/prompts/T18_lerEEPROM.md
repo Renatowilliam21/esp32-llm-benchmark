@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T18 — lerEEPROM
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+uint8_t lerEEPROM(uint16_t endereco);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Leia um byte da AT24C32 em 0x50. Envie endereço interno alto e baixo, finalize a fase de endereço, solicite exatamente 1 byte e retorne o byte quando disponível; se não houver byte, retorne 0.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use Wire.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

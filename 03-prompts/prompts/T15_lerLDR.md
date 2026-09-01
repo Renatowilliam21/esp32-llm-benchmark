@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T15 — lerLDR
+NÍVEL: Média
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+float lerLDR();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Se vemlDisponivel for verdadeiro, retorne veml.readLux(). Caso contrário, leia PIN_LDR com analogRead() e converta linearmente o intervalo 0..4095 para 100..0 usando map().
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere globais vemlDisponivel, veml e PIN_LDR.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

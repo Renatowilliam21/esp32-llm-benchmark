@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T03 — detectarEeprom
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+bool detectarEeprom();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente uma função que detecte uma EEPROM AT24C32 no endereço I2C 0x50. A função deve iniciar uma transmissão e considerar o dispositivo presente somente quando endTransmission() retornar 0.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use a instância global Wire; não inicialize o barramento dentro da função.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

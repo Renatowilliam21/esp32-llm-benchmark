@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T05 — faixaValida
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+bool faixaValida(float valor, float minimo, float maximo);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Retorne verdadeiro somente quando valor não for NaN e estiver no intervalo fechado [minimo,maximo].
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+C++/Arduino; pode usar isnan().
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

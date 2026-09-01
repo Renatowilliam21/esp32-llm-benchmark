@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T24 — lerAmbiente
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void lerAmbiente(float &temperatura, float &umidade);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Selecione a primeira fonte saudável e com valores válidos nesta prioridade: SHT41, BME280, AHT10, DHT22. Faixas válidas: temperatura -40..85 °C e umidade 0..100%. Se uma fonte retornar dado inválido, tente a próxima. Se nenhuma for válida, retorne NAN/NAN e fonteAmbienteAtual='nenhuma'. Quando a fonte selecionada for diferente da fonteAmbienteAtual anterior, atualize-a e incremente trocasDeFonteAmbiente.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere flags/objetos globais dos sensores, ultimaTempDHT, ultimaUmidDHT, fonteAmbienteAtual e trocasDeFonteAmbiente.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T04 — lerUV
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+float lerUV(int pinoUV);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Leia o ADC de 12 bits do ESP32 no pino informado. Considere referência de 3,3 V. Converta a leitura para tensão e depois para índice UV usando indiceUV = tensao * 10. O retorno nunca pode ser negativo.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use analogRead(); ADC esperado no intervalo 0..4095.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

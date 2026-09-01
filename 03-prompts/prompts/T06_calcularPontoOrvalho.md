@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T06 — calcularPontoOrvalho
+NÍVEL: Fácil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+float calcularPontoOrvalho(float temperaturaC, float umidadeRelativa);
 
 ENUNCIADO
-{{ENUNCIADO}}
+Calcule o ponto de orvalho pela fórmula de Magnus: a=17.27; b=237.7; alpha=(a*T)/(b+T)+ln(UR/100); Td=(b*alpha)/(a-alpha). Retorne Td em graus Celsius.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Use log() natural; entradas são consideradas fisicamente válidas.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T26 — gravarRegistroPendente
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void gravarRegistroPendente();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Crie RegistroMeteorologico a partir das médias dos acumuladores. Se não houver nenhuma amostra, retorne. Preencha timestamp do RTC quando disponível; calcule ITGU, ITU e índice de calor quando houver entradas necessárias; copie e zere pulsos de chuva/vento em região crítica e derive chuva/velocidade conforme constantes do firmware. Se EEPROM estiver disponível, grave em fila circular, atualize proximoRegistro/totalRegistros e salve controle; se estiver indisponível, use registroPendenteRAM e registroPendenteRAMValido. Ao final, limpe acumuladores.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere structs, acumuladores, RTC, funções de cálculo, gravarRegistro, salvarControleEEPROM, MAX_REGISTROS e variáveis globais já existentes.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

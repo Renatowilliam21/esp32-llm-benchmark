@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T21 — setup
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void setup();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente a inicialização do firmware: Serial a 115200; configure pinos de pluviômetro e anemômetro como INPUT_PULLUP e associe as respectivas ISRs; inicialize watchdog; inicialize Wire; chame inicializarSensores(); detecte EEPROM e, se disponível, carregue o controle persistido; carregue configuração; configure/conecte Wi-Fi; configure servidor administrativo.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere funções auxiliares já existentes com nomes: inicializarSensores, detectarEeprom, carregarControleEEPROM, carregarConfiguracao, configurarWiFi, configurarServidorAdmin. Não implemente essas auxiliares.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.

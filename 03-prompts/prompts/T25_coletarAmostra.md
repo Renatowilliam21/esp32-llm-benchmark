@@ -12,17 +12,17 @@ REGRAS GERAIS
 9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
 10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
 
-TAREFA: {{ID_TAREFA}} — {{TITULO}}
-NÍVEL: {{NIVEL}}
+TAREFA: T25 — coletarAmostra
+NÍVEL: Difícil
 
 ASSINATURA/CONTRATO
-{{ASSINATURA}}
+void coletarAmostra();
 
 ENUNCIADO
-{{ENUNCIADO}}
+Implemente um ciclo de coleta tolerante a falhas. Leia sensores disponíveis; valide faixas físicas; aplique passaTesteDegrau às temperaturas; adicione somente valores aceitos aos acumuladores correspondentes. Uma leitura inválida de um sensor não deve impedir que dados válidos dos demais sejam acumulados. Incrementar contador de descarte por faixa quando aplicável.
 
 CONTEXTO E RESTRIÇÕES
-{{RESTRICOES}}
+Considere funções lerAmbiente, lerPressaoAltitude, lerUV, lerLDR, lerQualidadeAr, faixaValida, passaTesteDegrau e acumuladores globais já definidos.
 
 SAÍDA
 Retorne somente o código C++ necessário para implementar a tarefa.
