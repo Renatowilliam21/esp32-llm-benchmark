@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T25",
+  "tarefa": "T25",
+  "nivel": "Difícil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:55:53.330666+00:00",
+  "fim_utc": "2026-09-01T12:56:20.510801+00:00",
+  "duracao_s": 27.180401,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 683,
+    "output_tokens": 3260
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CecknLyLZ2c9ngKhiNTc5",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T25_coletarAmostra.md"
+}

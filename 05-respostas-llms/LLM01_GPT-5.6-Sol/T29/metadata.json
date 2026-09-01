@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T29",
+  "tarefa": "T29",
+  "nivel": "Difícil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:16:29.426346+00:00",
+  "fim_utc": "2026-09-01T12:17:05.372411+00:00",
+  "duracao_s": 35.94707,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 421,
+    "output_tokens": 1898,
+    "total_tokens": 2319
+  },
+  "raw_metadata": {
+    "response_id": "resp_06355bcc2cd7f7d6006a96c21eca5c87d2bbb8a9c2d487f9ab",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T29_tentarDrenarFila.md"
+}

@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T25",
+  "tarefa": "T25",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:36:45.925197+00:00",
+  "fim_utc": "2026-09-01T12:39:25.576076+00:00",
+  "duracao_s": 159.653193,
+  "status": "sucesso",
+  "stop_reason": "length",
+  "usage": {
+    "input_tokens": 520,
+    "output_tokens": 8192,
+    "total_tokens": 8712
+  },
+  "raw_metadata": {
+    "response_id": "4008e761-6d5a-4931-90f2-878889746789",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "sem_resposta",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": true,
+  "erro": null,
+  "prompt_arquivo": "T25_coletarAmostra.md"
+}

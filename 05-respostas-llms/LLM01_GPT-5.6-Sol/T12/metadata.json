@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T12",
+  "tarefa": "T12",
+  "nivel": "Média",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:08:46.105041+00:00",
+  "fim_utc": "2026-09-01T12:08:50.410090+00:00",
+  "duracao_s": 4.305152,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 341,
+    "output_tokens": 107,
+    "total_tokens": 448
+  },
+  "raw_metadata": {
+    "response_id": "resp_018b26d1c55fecd2006a96c04f81dc87d28d65dbe3e7685298",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T12_isrAnemometro.md"
+}

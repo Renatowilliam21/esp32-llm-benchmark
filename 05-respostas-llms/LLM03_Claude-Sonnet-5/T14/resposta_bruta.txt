@@ -1,0 +1,32 @@
+```cpp
+void lerPressaoAltitude(float &pressaoHpa, float &altitudeM) {
+    float pressaoLidaHpa = NAN;
+    float altitudeLida = NAN;
+
+    if (bmeDisponivel && bmeSaudavel) {
+        float pressaoPa = bme.readPressure();
+        pressaoLidaHpa = pressaoPa / 100.0f;
+        if (pressaoLidaHpa >= PRESSAO_MIN_VALIDA && pressaoLidaHpa <= PRESSAO_MAX_VALIDA) {
+            altitudeLida = bme.readAltitude(pressaoLidaHpa);
+        } else {
+            pressaoLidaHpa = NAN;
+        }
+    } else if (bmpDisponivel && bmpSaudavel) {
+        float pressaoPa = bmp.readPressure();
+        pressaoLidaHpa = pressaoPa / 100.0f;
+        if (pressaoLidaHpa >= PRESSAO_MIN_VALIDA && pressaoLidaHpa <= PRESSAO_MAX_VALIDA) {
+            altitudeLida = bmp.readAltitude(pressaoLidaHpa);
+        } else {
+            pressaoLidaHpa = NAN;
+        }
+    }
+
+    if (isnan(pressaoLidaHpa)) {
+        pressaoHpa = NAN;
+        altitudeM = NAN;
+    } else {
+        pressaoHpa = pressaoLidaHpa;
+        altitudeM = altitudeLida;
+    }
+}
+```

@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T14",
+  "tarefa": "T14",
+  "nivel": "Média",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:09:04.139041+00:00",
+  "fim_utc": "2026-09-01T12:09:17.090918+00:00",
+  "duracao_s": 12.95223,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 398,
+    "output_tokens": 483,
+    "total_tokens": 881
+  },
+  "raw_metadata": {
+    "response_id": "resp_0b6cd55cc29967c7006a96c062962887d29c1dc0ccbed3e4d4",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T14_lerPressaoAltitude.md"
+}

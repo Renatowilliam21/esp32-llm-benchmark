@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T17",
+  "tarefa": "T17",
+  "nivel": "Média",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:25:31.335921+00:00",
+  "fim_utc": "2026-09-01T12:25:41.226112+00:00",
+  "duracao_s": 9.890372,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 481,
+    "output_tokens": 691,
+    "total_tokens": 1172
+  },
+  "raw_metadata": {
+    "response_id": "b79e55d0-2ebb-4f26-8ccc-f732d7c597d1",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T17_escreverEEPROM.md"
+}

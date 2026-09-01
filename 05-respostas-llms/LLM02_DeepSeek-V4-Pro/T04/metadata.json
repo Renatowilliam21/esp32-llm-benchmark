@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T04",
+  "tarefa": "T04",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:21:00.710295+00:00",
+  "fim_utc": "2026-09-01T12:21:08.158211+00:00",
+  "duracao_s": 7.448047,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 453,
+    "output_tokens": 642,
+    "total_tokens": 1095
+  },
+  "raw_metadata": {
+    "response_id": "1ddc056a-9c27-4de2-8718-37d2b4068ef2",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T04_lerUV.md"
+}

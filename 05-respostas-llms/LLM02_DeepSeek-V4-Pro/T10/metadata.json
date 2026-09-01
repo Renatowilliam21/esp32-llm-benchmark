@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T10",
+  "tarefa": "T10",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:22:57.766485+00:00",
+  "fim_utc": "2026-09-01T12:23:02.292135+00:00",
+  "duracao_s": 4.525723,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 423,
+    "output_tokens": 271,
+    "total_tokens": 694
+  },
+  "raw_metadata": {
+    "response_id": "6c8d26b4-95cc-417c-b420-31de84c8739d",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T10_classificar.md"
+}

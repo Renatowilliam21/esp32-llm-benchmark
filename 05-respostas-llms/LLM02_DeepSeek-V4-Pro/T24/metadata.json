@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T24",
+  "tarefa": "T24",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:34:05.532590+00:00",
+  "fim_utc": "2026-09-01T12:36:40.599810+00:00",
+  "duracao_s": 155.069762,
+  "status": "sucesso",
+  "stop_reason": "length",
+  "usage": {
+    "input_tokens": 551,
+    "output_tokens": 8192,
+    "total_tokens": 8743
+  },
+  "raw_metadata": {
+    "response_id": "93287cd7-78e7-4e2c-9e16-d6a18dfe3dec",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "sem_resposta",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": true,
+  "erro": null,
+  "prompt_arquivo": "T24_lerAmbiente.md"
+}

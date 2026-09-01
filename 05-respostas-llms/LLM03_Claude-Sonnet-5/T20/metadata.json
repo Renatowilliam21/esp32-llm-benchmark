@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T20",
+  "tarefa": "T20",
+  "nivel": "Média",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:53:54.797183+00:00",
+  "fim_utc": "2026-09-01T12:54:05.784540+00:00",
+  "duracao_s": 10.987456,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 657,
+    "output_tokens": 1066
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckdcCsCmL87LwQULuKy",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T20_lerRegistro.md"
+}

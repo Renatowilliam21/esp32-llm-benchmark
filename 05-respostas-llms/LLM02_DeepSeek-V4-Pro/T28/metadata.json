@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T28",
+  "tarefa": "T28",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:44:03.603380+00:00",
+  "fim_utc": "2026-09-01T12:45:06.033615+00:00",
+  "duracao_s": 62.431129,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 537,
+    "output_tokens": 3217,
+    "total_tokens": 3754
+  },
+  "raw_metadata": {
+    "response_id": "9349ce49-6c2d-48ee-8bcb-f875dd33d18a",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T28_enviarParaUmServidor.md"
+}

@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T12",
+  "tarefa": "T12",
+  "nivel": "Média",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:52:38.003483+00:00",
+  "fim_utc": "2026-09-01T12:52:41.419775+00:00",
+  "duracao_s": 3.416311,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 584,
+    "output_tokens": 117
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckXwW4MqSAoey3SWDjc",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T12_isrAnemometro.md"
+}

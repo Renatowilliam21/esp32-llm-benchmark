@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T30",
+  "tarefa": "T30",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:48:13.378974+00:00",
+  "fim_utc": "2026-09-01T12:50:45.140146+00:00",
+  "duracao_s": 151.763366,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 505,
+    "output_tokens": 7587,
+    "total_tokens": 8092
+  },
+  "raw_metadata": {
+    "response_id": "f7b92ade-6b0d-44d7-b139-5bd2b0aedfb2",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T30_configurarServidorAdmin.md"
+}

@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T21",
+  "tarefa": "T21",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:28:23.521321+00:00",
+  "fim_utc": "2026-09-01T12:29:18.925810+00:00",
+  "duracao_s": 55.405602,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 528,
+    "output_tokens": 3708,
+    "total_tokens": 4236
+  },
+  "raw_metadata": {
+    "response_id": "bf3b7f0c-5559-4edd-8f2b-f9fb3b483d06",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T21_setup.md"
+}

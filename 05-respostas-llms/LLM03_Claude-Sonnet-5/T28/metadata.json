@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T28",
+  "tarefa": "T28",
+  "nivel": "Difícil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:57:26.368787+00:00",
+  "fim_utc": "2026-09-01T12:57:34.226521+00:00",
+  "duracao_s": 7.857779,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 704,
+    "output_tokens": 831
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckuCbkKjwS8vYMgRKap",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T28_enviarParaUmServidor.md"
+}

@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T27",
+  "tarefa": "T27",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:41:33.304292+00:00",
+  "fim_utc": "2026-09-01T12:43:58.062249+00:00",
+  "duracao_s": 144.760047,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 507,
+    "output_tokens": 7950,
+    "total_tokens": 8457
+  },
+  "raw_metadata": {
+    "response_id": "a72b23b8-a070-4d61-a667-4d8cbfe243aa",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T27_montarJSON.md"
+}

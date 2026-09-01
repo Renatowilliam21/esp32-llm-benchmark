@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T03",
+  "tarefa": "T03",
+  "nivel": "Fácil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:51:22.358143+00:00",
+  "fim_utc": "2026-09-01T12:51:25.287033+00:00",
+  "duracao_s": 2.928914,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 568,
+    "output_tokens": 57
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckSN8yLutQgB3iW9oMR",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T03_detectarEeprom.md"
+}

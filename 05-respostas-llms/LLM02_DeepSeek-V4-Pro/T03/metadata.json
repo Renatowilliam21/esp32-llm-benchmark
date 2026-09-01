@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T03",
+  "tarefa": "T03",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:20:36.074493+00:00",
+  "fim_utc": "2026-09-01T12:20:56.165743+00:00",
+  "duracao_s": 20.091643,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 449,
+    "output_tokens": 576,
+    "total_tokens": 1025
+  },
+  "raw_metadata": {
+    "response_id": "fd6f1dbc-6faf-4624-a971-808d74323679",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T03_detectarEeprom.md"
+}

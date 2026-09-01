@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T09",
+  "tarefa": "T09",
+  "nivel": "Fácil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:08:09.201859+00:00",
+  "fim_utc": "2026-09-01T12:08:13.311708+00:00",
+  "duracao_s": 4.109943,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 345,
+    "output_tokens": 138,
+    "total_tokens": 483
+  },
+  "raw_metadata": {
+    "response_id": "resp_013627545e27b9dd006a96c02ae53c87d28c84a2a50a909318",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T09_classificarIndiceCalor.md"
+}

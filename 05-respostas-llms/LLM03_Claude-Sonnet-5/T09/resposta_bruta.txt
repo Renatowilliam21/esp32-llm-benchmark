@@ -1,0 +1,18 @@
+```cpp
+String classificarIndiceCalor(float indiceCalor) {
+    if (isnan(indiceCalor)) {
+        return String("");
+    }
+    if (indiceCalor <= 27) {
+        return String("normal");
+    } else if (indiceCalor <= 32) {
+        return String("atencao");
+    } else if (indiceCalor <= 41) {
+        return String("atencao_extrema");
+    } else if (indiceCalor <= 54) {
+        return String("perigo");
+    } else {
+        return String("perigo_extremo");
+    }
+}
+```

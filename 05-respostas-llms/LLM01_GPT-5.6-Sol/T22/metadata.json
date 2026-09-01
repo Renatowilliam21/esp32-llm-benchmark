@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T22",
+  "tarefa": "T22",
+  "nivel": "Difícil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:12:36.043857+00:00",
+  "fim_utc": "2026-09-01T12:12:51.706210+00:00",
+  "duracao_s": 15.662777,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 402,
+    "output_tokens": 653,
+    "total_tokens": 1055
+  },
+  "raw_metadata": {
+    "response_id": "resp_0e00ae4fd9f028af006a96c1362e3c87d2aab1a0c5cc0de79c",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T22_loop.md"
+}

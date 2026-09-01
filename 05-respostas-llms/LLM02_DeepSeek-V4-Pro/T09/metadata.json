@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T09",
+  "tarefa": "T09",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:22:33.293204+00:00",
+  "fim_utc": "2026-09-01T12:22:53.271212+00:00",
+  "duracao_s": 19.978388,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 467,
+    "output_tokens": 1773,
+    "total_tokens": 2240
+  },
+  "raw_metadata": {
+    "response_id": "87112de0-1395-4719-8d3a-572a93de7796",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T09_classificarIndiceCalor.md"
+}

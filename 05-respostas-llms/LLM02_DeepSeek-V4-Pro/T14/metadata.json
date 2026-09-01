@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T14",
+  "tarefa": "T14",
+  "nivel": "Média",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:24:06.780013+00:00",
+  "fim_utc": "2026-09-01T12:24:34.777398+00:00",
+  "duracao_s": 27.997936,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 535,
+    "output_tokens": 2818,
+    "total_tokens": 3353
+  },
+  "raw_metadata": {
+    "response_id": "033b61c0-d1bb-4ba4-a972-9fa0eddbc3d7",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T14_lerPressaoAltitude.md"
+}

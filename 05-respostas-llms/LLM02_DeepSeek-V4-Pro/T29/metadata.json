@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T29",
+  "tarefa": "T29",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:45:11.665973+00:00",
+  "fim_utc": "2026-09-01T12:48:08.452824+00:00",
+  "duracao_s": 176.789409,
+  "status": "sucesso",
+  "stop_reason": "length",
+  "usage": {
+    "input_tokens": 576,
+    "output_tokens": 8193,
+    "total_tokens": 8769
+  },
+  "raw_metadata": {
+    "response_id": "f5c50b2a-0b2b-4148-bad0-1350d75f1cbf",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "sem_resposta",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": true,
+  "erro": null,
+  "prompt_arquivo": "T29_tentarDrenarFila.md"
+}

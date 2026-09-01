@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T23",
+  "tarefa": "T23",
+  "nivel": "Difícil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:12:55.832047+00:00",
+  "fim_utc": "2026-09-01T12:13:33.641095+00:00",
+  "duracao_s": 37.810107,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 446,
+    "output_tokens": 2291,
+    "total_tokens": 2737
+  },
+  "raw_metadata": {
+    "response_id": "resp_0bd7beb276fe178f006a96c149495487d2b8c10e43cf1b9ee4",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T23_inicializarSensores.md"
+}

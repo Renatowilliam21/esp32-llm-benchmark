@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T02",
+  "tarefa": "T02",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:19:48.410772+00:00",
+  "fim_utc": "2026-09-01T12:20:31.175958+00:00",
+  "duracao_s": 42.76604,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 461,
+    "output_tokens": 1531,
+    "total_tokens": 1992
+  },
+  "raw_metadata": {
+    "response_id": "8b973f4f-5755-4b15-8004-e6b6fcde92e9",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T02_Acumulador.md"
+}

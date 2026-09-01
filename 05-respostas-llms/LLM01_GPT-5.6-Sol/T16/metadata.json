@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T16",
+  "tarefa": "T16",
+  "nivel": "Média",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:09:29.887328+00:00",
+  "fim_utc": "2026-09-01T12:09:34.681873+00:00",
+  "duracao_s": 4.794664,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 417,
+    "output_tokens": 261,
+    "total_tokens": 678
+  },
+  "raw_metadata": {
+    "response_id": "resp_0f7bfc14c0a08bfb006a96c07b4a0087d282b1b191689bef93",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T16_calcularIndiceCalor.md"
+}

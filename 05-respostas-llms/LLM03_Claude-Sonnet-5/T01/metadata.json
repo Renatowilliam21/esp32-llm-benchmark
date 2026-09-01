@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T01",
+  "tarefa": "T01",
+  "nivel": "Fácil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:51:04.884990+00:00",
+  "fim_utc": "2026-09-01T12:51:08.877563+00:00",
+  "duracao_s": 3.992611,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 662,
+    "output_tokens": 169
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckR644uRZGpbqE5m6gp",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T01_passaTesteDegrau.md"
+}

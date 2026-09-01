@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T06",
+  "tarefa": "T06",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:21:27.942024+00:00",
+  "fim_utc": "2026-09-01T12:21:35.283146+00:00",
+  "duracao_s": 7.341249,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 461,
+    "output_tokens": 565,
+    "total_tokens": 1026
+  },
+  "raw_metadata": {
+    "response_id": "ccd34250-5014-489b-8e63-be6db26ffb69",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T06_calcularPontoOrvalho.md"
+}

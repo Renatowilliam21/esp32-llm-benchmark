@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T15",
+  "tarefa": "T15",
+  "nivel": "Média",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:24:39.388086+00:00",
+  "fim_utc": "2026-09-01T12:24:47.898228+00:00",
+  "duracao_s": 8.510295,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 446,
+    "output_tokens": 680,
+    "total_tokens": 1126
+  },
+  "raw_metadata": {
+    "response_id": "431506c1-3262-4c46-ab4a-58d65c589b52",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T15_lerLDR.md"
+}

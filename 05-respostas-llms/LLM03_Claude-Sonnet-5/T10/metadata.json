@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T10",
+  "tarefa": "T10",
+  "nivel": "Fácil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:52:21.583964+00:00",
+  "fim_utc": "2026-09-01T12:52:24.596626+00:00",
+  "duracao_s": 3.012678,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 528,
+    "output_tokens": 103
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckWjppLbwLvL5z2hmz8",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T10_classificar.md"
+}

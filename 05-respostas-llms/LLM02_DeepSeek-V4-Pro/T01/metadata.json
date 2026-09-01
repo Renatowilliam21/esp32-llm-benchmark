@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T01",
+  "tarefa": "T01",
+  "nivel": "Fácil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:19:36.423569+00:00",
+  "fim_utc": "2026-09-01T12:19:44.201184+00:00",
+  "duracao_s": 7.777745,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 508,
+    "output_tokens": 794,
+    "total_tokens": 1302
+  },
+  "raw_metadata": {
+    "response_id": "c20b977c-4943-4da2-a267-e435c50bd74a",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T01_passaTesteDegrau.md"
+}

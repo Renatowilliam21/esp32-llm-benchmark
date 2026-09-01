@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T05",
+  "tarefa": "T05",
+  "nivel": "Fácil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:07:21.519676+00:00",
+  "fim_utc": "2026-09-01T12:07:25.480993+00:00",
+  "duracao_s": 3.961412,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 305,
+    "output_tokens": 37,
+    "total_tokens": 342
+  },
+  "raw_metadata": {
+    "response_id": "resp_0e1193e8f63c93f6006a96bffaf6c087d2953d954bc3353061",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T05_faixaValida.md"
+}

@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T19",
+  "tarefa": "T19",
+  "nivel": "Média",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:11:36.986100+00:00",
+  "fim_utc": "2026-09-01T12:11:40.997514+00:00",
+  "duracao_s": 4.011512,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 352,
+    "output_tokens": 102,
+    "total_tokens": 454
+  },
+  "raw_metadata": {
+    "response_id": "resp_0be3e5d7bbc86ec6006a96c0fa764487d2b6741ca1b3d1a085",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T19_calcularChecksum.md"
+}

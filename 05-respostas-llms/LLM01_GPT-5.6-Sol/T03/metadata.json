@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T03",
+  "tarefa": "T03",
+  "nivel": "Fácil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:07:04.989478+00:00",
+  "fim_utc": "2026-09-01T12:07:08.903803+00:00",
+  "duracao_s": 3.914421,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 325,
+    "output_tokens": 30,
+    "total_tokens": 355
+  },
+  "raw_metadata": {
+    "response_id": "resp_0ac4ea2224d1784b006a96bfea7f3087d2bc98ee08c126dc45",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T03_detectarEeprom.md"
+}

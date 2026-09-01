@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T16",
+  "tarefa": "T16",
+  "nivel": "Média",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:24:51.890539+00:00",
+  "fim_utc": "2026-09-01T12:25:26.761283+00:00",
+  "duracao_s": 34.871435,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 543,
+    "output_tokens": 1842,
+    "total_tokens": 2385
+  },
+  "raw_metadata": {
+    "response_id": "cbe72249-1dfd-4dc0-bca4-4b109c99aebf",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T16_calcularIndiceCalor.md"
+}

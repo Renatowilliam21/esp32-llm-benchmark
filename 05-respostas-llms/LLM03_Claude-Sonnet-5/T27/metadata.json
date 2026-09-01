@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T27",
+  "tarefa": "T27",
+  "nivel": "Difícil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:57:09.169435+00:00",
+  "fim_utc": "2026-09-01T12:57:21.983253+00:00",
+  "duracao_s": 12.813931,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 662,
+    "output_tokens": 1436
+  },
+  "raw_metadata": {
+    "response_id": "msg_011Cecksvve5v52BTA8qUibu",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T27_montarJSON.md"
+}

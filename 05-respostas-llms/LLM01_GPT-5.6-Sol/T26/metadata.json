@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T26",
+  "tarefa": "T26",
+  "nivel": "Difícil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:14:53.640006+00:00",
+  "fim_utc": "2026-09-01T12:15:32.495069+00:00",
+  "duracao_s": 38.856152,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 427,
+    "output_tokens": 2450,
+    "total_tokens": 2877
+  },
+  "raw_metadata": {
+    "response_id": "resp_018071a478a9b22c006a96c1beffa087d29ded7648b8e98ff7",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T26_gravarRegistroPendente.md"
+}

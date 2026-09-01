@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T12",
+  "tarefa": "T12",
+  "nivel": "Média",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:23:17.471358+00:00",
+  "fim_utc": "2026-09-01T12:23:27.027665+00:00",
+  "duracao_s": 9.556453,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 462,
+    "output_tokens": 578,
+    "total_tokens": 1040
+  },
+  "raw_metadata": {
+    "response_id": "f3238c29-7add-4691-99db-a5f73f270c89",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T12_isrAnemometro.md"
+}

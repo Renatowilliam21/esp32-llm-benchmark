@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T21",
+  "tarefa": "T21",
+  "nivel": "Difícil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:54:10.586231+00:00",
+  "fim_utc": "2026-09-01T12:54:23.827514+00:00",
+  "duracao_s": 13.241405,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 690,
+    "output_tokens": 1364
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckemNoWXcZzcToEEP2d",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T21_setup.md"
+}

@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T17",
+  "tarefa": "T17",
+  "nivel": "Média",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:53:29.225221+00:00",
+  "fim_utc": "2026-09-01T12:53:31.410287+00:00",
+  "duracao_s": 2.185071,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 617,
+    "output_tokens": 134
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckbiYJuGqJQvqLsCyUv",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T17_escreverEEPROM.md"
+}

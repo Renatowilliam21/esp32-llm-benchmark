@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T02",
+  "tarefa": "T02",
+  "nivel": "Fácil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:51:13.947612+00:00",
+  "fim_utc": "2026-09-01T12:51:17.939538+00:00",
+  "duracao_s": 3.991969,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 589,
+    "output_tokens": 176
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckRkGi9nnqLJdt7aYG8",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T02_Acumulador.md"
+}

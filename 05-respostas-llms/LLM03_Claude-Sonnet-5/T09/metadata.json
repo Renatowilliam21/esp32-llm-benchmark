@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T09",
+  "tarefa": "T09",
+  "nivel": "Fácil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:52:13.106760+00:00",
+  "fim_utc": "2026-09-01T12:52:16.672236+00:00",
+  "duracao_s": 3.565495,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 594,
+    "output_tokens": 188
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckW73ExsyCnzeA45yfC",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T09_classificarIndiceCalor.md"
+}

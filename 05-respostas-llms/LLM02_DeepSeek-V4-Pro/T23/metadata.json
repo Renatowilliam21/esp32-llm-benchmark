@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T23",
+  "tarefa": "T23",
+  "nivel": "Difícil",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:31:38.574848+00:00",
+  "fim_utc": "2026-09-01T12:33:57.980210+00:00",
+  "duracao_s": 139.408185,
+  "status": "sucesso",
+  "stop_reason": "length",
+  "usage": {
+    "input_tokens": 572,
+    "output_tokens": 8192,
+    "total_tokens": 8764
+  },
+  "raw_metadata": {
+    "response_id": "994bc9e2-f802-479f-8e70-7e13b10bc9f6",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "sem_resposta",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": true,
+  "erro": null,
+  "prompt_arquivo": "T23_inicializarSensores.md"
+}

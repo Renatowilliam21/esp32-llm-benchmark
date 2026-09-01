@@ -1,0 +1,57 @@
+```cpp
+void gravarRegistroPendente() {
+    if (contadorAmostras == 0) return;
+
+    RegistroMeteorologico reg;
+
+    // Preenche timestamp do RTC quando disponível
+    if (rtcDisponivel) {
+        reg.timestamp = rtc.now().unixtime();
+    } else {
+        reg.timestamp = 0;
+    }
+
+    // Calcula médias dos acumuladores
+    reg.temperatura = somaTemperatura / contadorAmostras;
+    reg.umidade = somaUmidade / contadorAmostras;
+    reg.pressao = somaPressao / contadorAmostras;
+
+    // Calcula índices térmicos
+    reg.itgu = calcularITGU(reg.temperatura, reg.umidade, reg.pressao);
+    reg.itu = calcularITU(reg.temperatura, reg.umidade);
+    reg.indiceCalor = calcularIndiceCalor(reg.temperatura, reg.umidade);
+
+    // Copia e zera pulsos de chuva/vento em região crítica
+    uint32_t pulsosChuvaLocal, pulsosVentoLocal;
+    noInterrupts();
+    pulsosChuvaLocal = pulsosChuva;
+    pulsosVentoLocal = pulsosVento;
+    pulsosChuva = 0;
+    pulsosVento = 0;
+    interrupts();
+
+    // Deriva chuva/velocidade a partir das constantes do firmware
+    reg.chuva = (float)pulsosChuvaLocal * MM_POR_PULSO_CHUVA;
+    reg.velocidadeVento = (float)pulsosVentoLocal * KMH_POR_PULSO_VENTO;
+
+    // Limpa acumuladores de médias
+    contadorAmostras = 0;
+    somaTemperatura = 0;
+    somaUmidade = 0;
+    somaPressao = 0;
+
+    if (eepromDisponivel) {
+        // Grava em fila circular na EEPROM
+        gravarRegistro(reg);
+        if (totalRegistros < MAX_REGISTROS) {
+            totalRegistros++;
+        }
+        proximoRegistro = (proximoRegistro + 1) % MAX_REGISTROS;
+        salvarControleEEPROM();
+    } else {
+        // Usa registro pendente em RAM
+        registroPendenteRAM = reg;
+        registroPendenteRAMValido = true;
+    }
+}
+```

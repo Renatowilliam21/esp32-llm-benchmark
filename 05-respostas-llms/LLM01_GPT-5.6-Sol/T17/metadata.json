@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T17",
+  "tarefa": "T17",
+  "nivel": "Média",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:11:19.431381+00:00",
+  "fim_utc": "2026-09-01T12:11:23.215051+00:00",
+  "duracao_s": 3.783761,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 351,
+    "output_tokens": 76,
+    "total_tokens": 427
+  },
+  "raw_metadata": {
+    "response_id": "resp_05f1a9ea4493924b006a96c0e8ca8887d2b229985467f32fc8",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T17_escreverEEPROM.md"
+}

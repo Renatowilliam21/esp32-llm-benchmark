@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T11",
+  "tarefa": "T11",
+  "nivel": "Média",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:52:31.082993+00:00",
+  "fim_utc": "2026-09-01T12:52:33.488668+00:00",
+  "duracao_s": 2.40568,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 609,
+    "output_tokens": 103
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckXTSbzpDKSrobbq225",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T11_isrPluviometro.md"
+}

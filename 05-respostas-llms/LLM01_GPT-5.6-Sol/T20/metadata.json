@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T20",
+  "tarefa": "T20",
+  "nivel": "Média",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:11:45.322451+00:00",
+  "fim_utc": "2026-09-01T12:11:53.480580+00:00",
+  "duracao_s": 8.158345,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 357,
+    "output_tokens": 350,
+    "total_tokens": 707
+  },
+  "raw_metadata": {
+    "response_id": "resp_097606c301e14757006a96c102a8c887d2b7c3ed4ae8e9ef8b",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T20_lerRegistro.md"
+}

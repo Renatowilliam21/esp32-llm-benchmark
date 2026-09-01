@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM01-T28",
+  "tarefa": "T28",
+  "nivel": "Difícil",
+  "provedor": "openai",
+  "llm_id": "LLM01",
+  "modelo_solicitado": "gpt-5.6-sol",
+  "modelo_retornado": "gpt-5.6-sol",
+  "inicio_utc": "2026-09-01T12:16:07.328200+00:00",
+  "fim_utc": "2026-09-01T12:16:24.854967+00:00",
+  "duracao_s": 17.527249,
+  "status": "sucesso",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 412,
+    "output_tokens": 953,
+    "total_tokens": 1365
+  },
+  "raw_metadata": {
+    "response_id": "resp_031f11c37008fa52006a96c208b65887d29e1fbcbdb2b451cf",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T28_enviarParaUmServidor.md"
+}

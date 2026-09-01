@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T22",
+  "tarefa": "T22",
+  "nivel": "Difícil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:54:30.448174+00:00",
+  "fim_utc": "2026-09-01T12:54:43.422148+00:00",
+  "duracao_s": 12.974089,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 712,
+    "output_tokens": 1335
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckgEN3ZkotnhEtZh4rW",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T22_loop.md"
+}

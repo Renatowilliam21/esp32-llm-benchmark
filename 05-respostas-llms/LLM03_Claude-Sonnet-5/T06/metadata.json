@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T06",
+  "tarefa": "T06",
+  "nivel": "Fácil",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:51:48.754400+00:00",
+  "fim_utc": "2026-09-01T12:51:52.154489+00:00",
+  "duracao_s": 3.400124,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 607,
+    "output_tokens": 137
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckUK5EczCwMU7ELwxni",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T06_calcularPontoOrvalho.md"
+}

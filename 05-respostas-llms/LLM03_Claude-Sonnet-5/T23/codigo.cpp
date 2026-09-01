@@ -1,0 +1,179 @@
+#include <Arduino.h>
+#include <Wire.h>
+#include <DHT.h>
+#include <Adafruit_BME280.h>
+#include <Adafruit_BMP280.h>
+#include <Adafruit_AHTX0.h>
+#include <Adafruit_SHT4x.h>
+#include <Adafruit_VEML7700.h>
+#include <ScioSense_ENS160.h>
+#include <RTClib.h>
+#include <EEPROM.h>
+
+// ---------------------------------------------------------------------
+// Objetos e flags globais assumidos como já existentes no projeto.
+// Declarados aqui como extern para permitir a compilação isolada
+// desta unidade, sem redefinir seus valores.
+// ---------------------------------------------------------------------
+extern DHT dht;
+extern Adafruit_BME280 bme;
+extern Adafruit_BMP280 bmp;
+extern Adafruit_AHTX0 aht;
+extern Adafruit_SHT4x sht4;
+extern Adafruit_VEML7700 veml;
+extern ScioSense_ENS160 ens160;
+extern RTC_DS3231 rtc;
+
+extern bool dhtDisponivel;
+extern bool bmeDisponivel;
+extern bool bmpDisponivel;
+extern bool ahtDisponivel;
+extern bool sht4Disponivel;
+extern bool vemlDisponivel;
+extern bool ldrFallbackAtivo;
+extern bool ens160Disponivel;
+extern bool rtcDisponivel;
+extern bool eepromDisponivel;
+
+extern const int PINO_LDR;
+extern const size_t EEPROM_TAMANHO;
+
+// ---------------------------------------------------------------------
+// Funções auxiliares internas
+// ---------------------------------------------------------------------
+static bool inicializarBmeOuBmp() {
+  const uint8_t enderecos[2] = {0x76, 0x77};
+
+  for (uint8_t i = 0; i < 2; i++) {
+    if (bme.begin(enderecos[i])) {
+      uint8_t id = bme.sensorID();
+      if (id == 0x60) {
+        bmeDisponivel = true;
+        bmpDisponivel = false;
+        return true;
+      }
+    }
+  }
+
+  for (uint8_t i = 0; i < 2; i++) {
+    if (bmp.begin(enderecos[i])) {
+      uint8_t id = bmp.sensorID();
+      if (id == 0x58) {
+        bmpDisponivel = true;
+        bmeDisponivel = false;
+        return true;
+      }
+    }
+  }
+
+  bmeDisponivel = false;
+  bmpDisponivel = false;
+  return false;
+}
+
+static bool inicializarEns160() {
+  if (ens160.begin(0x52)) {
+    ens160.setMode(ENS160_OPMODE_STD);
+    ens160Disponivel = true;
+    return true;
+  }
+
+  if (ens160.begin(0x53)) {
+    ens160.setMode(ENS160_OPMODE_STD);
+    ens160Disponivel = true;
+    return true;
+  }
+
+  ens160Disponivel = false;
+  return false;
+}
+
+static bool inicializarSht41() {
+  if (!sht4.begin()) {
+    sht4Disponivel = false;
+    return false;
+  }
+
+  sht4.setPrecision(SHT4X_HIGH_PRECISION);
+  sht4.setHeater(SHT4X_NO_HEATER);
+  sht4Disponivel = true;
+  return true;
+}
+
+static bool inicializarVeml() {
+  if (veml.begin()) {
+    vemlDisponivel = true;
+    ldrFallbackAtivo = false;
+    return true;
+  }
+
+  vemlDisponivel = false;
+  ldrFallbackAtivo = true;
+  pinMode(PINO_LDR, INPUT);
+  return false;
+}
+
+static bool inicializarRtc() {
+  if (!rtc.begin()) {
+    rtcDisponivel = false;
+    return false;
+  }
+
+  rtcDisponivel = true;
+
+  if (rtc.lostPower()) {
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  }
+
+  return true;
+}
+
+static bool inicializarEepromInterna() {
+  if (EEPROM.begin(EEPROM_TAMANHO)) {
+    eepromDisponivel = true;
+    return true;
+  }
+
+  eepromDisponivel = false;
+  return false;
+}
+
+static void configurarAdc() {
+  analogReadResolution(12);
+  analogSetAttenuation(ADC_11db);
+}
+
+// ---------------------------------------------------------------------
+// Implementação principal
+// ---------------------------------------------------------------------
+void inicializarSensores() {
+  Wire.begin();
+
+  // DHT22
+  dht.begin();
+  dhtDisponivel = true;
+
+  // BME280 / BMP280 (com fallback de endereço I2C)
+  inicializarBmeOuBmp();
+
+  // AHT10
+  ahtDisponivel = aht.begin();
+
+  // SHT41 em alta precisão, sem heater
+  inicializarSht41();
+
+  // VEML7700 com fallback para LDR
+  inicializarVeml();
+
+  // ENS160 com fallback de endereço I2C
+  inicializarEns160();
+
+  // RTC com ajuste em caso de perda de energia
+  inicializarRtc();
+
+  // EEPROM
+  inicializarEepromInterna();
+
+  // Configuração do ADC
+  configurarAdc();
+}

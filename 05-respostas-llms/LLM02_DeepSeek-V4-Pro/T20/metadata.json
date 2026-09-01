@@ -1,0 +1,32 @@
+{
+  "execucao_id": "LLM02-T20",
+  "tarefa": "T20",
+  "nivel": "Média",
+  "provedor": "deepseek",
+  "llm_id": "LLM02",
+  "modelo_solicitado": "deepseek-v4-pro",
+  "modelo_retornado": "deepseek-v4-pro",
+  "inicio_utc": "2026-09-01T12:27:29.857834+00:00",
+  "fim_utc": "2026-09-01T12:28:18.526821+00:00",
+  "duracao_s": 48.66996,
+  "status": "sucesso",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 499,
+    "output_tokens": 4319,
+    "total_tokens": 4818
+  },
+  "raw_metadata": {
+    "response_id": "90a0c6b6-8db5-48e9-b59b-036ea1ededbc",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "extracao": {
+    "metodo": "resposta_integral",
+    "quantidade_blocos": 0,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T20_lerRegistro.md"
+}

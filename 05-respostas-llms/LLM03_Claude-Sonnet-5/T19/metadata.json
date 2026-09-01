@@ -1,0 +1,31 @@
+{
+  "execucao_id": "LLM03-T19",
+  "tarefa": "T19",
+  "nivel": "Média",
+  "provedor": "anthropic",
+  "llm_id": "LLM03",
+  "modelo_solicitado": "claude-sonnet-5",
+  "modelo_retornado": "claude-sonnet-5",
+  "inicio_utc": "2026-09-01T12:53:45.868918+00:00",
+  "fim_utc": "2026-09-01T12:53:49.679744+00:00",
+  "duracao_s": 3.810848,
+  "status": "sucesso",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 632,
+    "output_tokens": 177
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CeckcwsmiJHzKucxVJMHn",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "extracao": {
+    "metodo": "blocos_markdown",
+    "quantidade_blocos": 1,
+    "alteracao_semantica": false
+  },
+  "resposta_vazia": false,
+  "erro": null,
+  "prompt_arquivo": "T19_calcularChecksum.md"
+}

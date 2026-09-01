@@ -1,0 +1,14 @@
+```cpp
+String classificar(float indice) {
+  if (isnan(indice)) {
+    return String("");
+  }
+  if (indice <= 72) {
+    return String("normal");
+  } else if (indice <= 78) {
+    return String("alerta");
+  } else {
+    return String("perigo");
+  }
+}
+```
