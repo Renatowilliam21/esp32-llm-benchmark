@@ -1,0 +1,11 @@
+```json
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Assinatura preservada e conversão de ADC para tensão e índice UV corretas, usando analogRead conforme especificado. A verificação de não-negatividade é redundante mas não prejudica a corretude. Código simples, determinístico e adequado ao contexto ESP32."
+}
+```

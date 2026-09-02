@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A função respeita a assinatura, trata corretamente o caso sem amostras, calcula ITU/ITGU/índice de calor com verificação de finitude, protege pulsos em região crítica e trata corretamente os caminhos EEPROM/RAM, finalizando com a limpeza dos acumuladores. Uso coerente das dependências e adequado ao contexto embarcado ESP32."
+}

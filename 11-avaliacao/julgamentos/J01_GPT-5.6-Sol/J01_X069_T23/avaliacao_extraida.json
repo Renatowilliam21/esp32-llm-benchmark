@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 1,
+  "R3": 1,
+  "R4": 1,
+  "R5": 2,
+  "total": 7,
+  "justificativa": "A assinatura é preservada e quase todos os sensores, RTC, EEPROM e ADC são inicializados de forma independente. Contudo, ScioSense_ENS160 normalmente define o endereço no construtor, de modo que begin(0x52) e begin(0x53) não implementam corretamente o fallback, e o DHT é marcado disponível sem verificação de saúde."
+}

@@ -1,0 +1,24 @@
+{
+  "juiz_id": "J02",
+  "juiz_nome": "DeepSeek-V4-Pro",
+  "provider": "deepseek",
+  "arquivo_prompt": "11-avaliacao\\prompts_julgamento\\J02\\J02_X069_T23.txt",
+  "model_requested": "deepseek-v4-pro",
+  "model_returned": "deepseek-v4-pro",
+  "stop_reason": "length",
+  "usage": {
+    "input_tokens": 2812,
+    "output_tokens": 8192,
+    "total_tokens": 11004
+  },
+  "raw_metadata": {
+    "response_id": "db81756f-1348-4900-89d9-32bc7524d38d",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "inicio_utc": "2026-09-01T14:25:47.918902+00:00",
+  "fim_utc": "2026-09-01T14:27:44.032481+00:00",
+  "duracao_segundos": 116.114,
+  "status_json": "invalido",
+  "erro_json": "Resposta não contém JSON válido: Expecting value: line 1 column 1 (char 0)"
+}

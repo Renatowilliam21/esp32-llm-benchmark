@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A estrutura preserva integralmente o contrato e implementa corretamente a adição, o descarte de NaN, o cálculo da média e a limpeza. O uso de <cmath>, isnan() e NAN é coerente com o contexto Arduino/ESP32."
+}

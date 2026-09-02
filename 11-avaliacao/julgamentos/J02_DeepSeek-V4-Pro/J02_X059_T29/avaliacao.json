@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A implementação preserva a assinatura e atende aos fluxos EEPROM e RAM, descartando registros com checksum inválido, removendo apenas após sucesso nos dois destinos e mantendo pendências em falha parcial. As dependências são utilizadas de forma coerente e não há comportamento incompatível evidente."
+}

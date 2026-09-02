@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 1,
+  "R3": 1,
+  "R4": 1,
+  "R5": 1,
+  "total": 6,
+  "justificativa": "A assinatura é preservada e a lógica geral segue o fluxo pedido, mas o caso de checksum inválido decrementa e avança o índice sem usar lerRegistro corretamente para descartar (assume que lerRegistro só falha por checksum, o que é uma suposição não garantida). O tratamento de falha parcial no envio apenas retorna sem indicar explicitamente que o registro é mantido, mas isso está implícito por não decrementar; no caso RAM, ao ter sucesso em ambos, marca enviado mas não remove logicamente antes de temRegistroPendenteRAM=false, o que é coerente. Não há uso de bibliotecas inexistentes, mas a suposição sobre lerRegistro pode ser uma inconsistência leve com o enunciado, que trata falha de checksum como caso distinto de falha de leitura genérica."
+}

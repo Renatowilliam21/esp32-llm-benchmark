@@ -1,0 +1,11 @@
+```json
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "Nenhum código candidato foi apresentado para avaliação, impossibilitando a análise de qualquer critério da rubrica. A ausência de implementação implica violação total do contrato e dos requisitos especificados."
+}
+```

@@ -1,0 +1,172 @@
+Você atua como juiz técnico independente em um experimento de avaliação de código para ESP32.
+
+REGRAS DE JULGAMENTO
+
+1. Avalie somente o material apresentado.
+2. A identidade do modelo que gerou o código é desconhecida e irrelevante.
+3. Não tente inferir qual modelo produziu a solução.
+4. Não execute o código.
+5. Não reescreva nem corrija a solução.
+6. Não proponha código alternativo.
+7. Não considere resultados externos de compilação ou testes.
+8. Não considere avaliações anteriores.
+9. Utilize exclusivamente a tarefa, o código candidato e a rubrica abaixo.
+10. Faça o julgamento de forma independente.
+
+IDENTIFICADOR ANÔNIMO
+
+X022
+
+TAREFA
+
+T01
+
+ESPECIFICAÇÃO ORIGINAL DA TAREFA
+
+Você está participando de um experimento de geração de código para ESP32.
+
+REGRAS GERAIS
+1. Linguagem: C++ para Arduino/ESP32.
+2. Gere somente a implementação solicitada.
+3. Não inclua explicações, comentários de análise, Markdown ou blocos ```; responda somente com código-fonte.
+4. Preserve exatamente os nomes e assinaturas fornecidos.
+5. Não altere requisitos para simplificar a solução.
+6. Não crie bibliotecas fictícias ou APIs inexistentes.
+7. Você pode criar pequenas funções auxiliares quando necessário, desde que não altere o contrato pedido.
+8. Não implemente setup() ou loop() quando eles não forem explicitamente solicitados.
+9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
+10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
+
+TAREFA: T01 — passaTesteDegrau
+NÍVEL: Fácil
+
+ASSINATURA/CONTRATO
+bool passaTesteDegrau(float novoValor, float &ultimoValor, float limite, unsigned long &contadorRejeicoes);
+
+ENUNCIADO
+Implemente uma função que aceite a primeira leitura quando ultimoValor for NaN; nas leituras seguintes, aceite apenas quando a diferença absoluta entre novoValor e ultimoValor for menor ou igual a limite. Quando aceita, atualize ultimoValor. Quando rejeitada, preserve ultimoValor e incremente contadorRejeicoes.
+
+CONTEXTO E RESTRIÇÕES
+C++/Arduino; pode usar isnan() e fabs(); não usar delay().
+
+SAÍDA
+Retorne somente o código C++ necessário para implementar a tarefa.
+
+
+CÓDIGO CANDIDATO
+
+#include <math.h>
+
+bool passaTesteDegrau(float novoValor, float &ultimoValor, float limite, unsigned long &contadorRejeicoes) {
+    if (isnan(ultimoValor)) {
+        ultimoValor = novoValor;
+        return true;
+    }
+    if (fabs(novoValor - ultimoValor) <= limite) {
+        ultimoValor = novoValor;
+        return true;
+    }
+    contadorRejeicoes++;
+    return false;
+}
+
+RUBRICA DE AVALIAÇÃO
+
+# Rubrica de Julgamento Qualitativo
+
+Cada solução deve ser avaliada de forma independente, sem conhecimento
+do modelo que produziu o código.
+
+Cada critério recebe nota 0, 1 ou 2.
+
+## R1 — Atendimento ao contrato e assinatura
+
+0 — A solução altera, ignora ou viola de forma relevante o contrato,
+assinatura, tipo de retorno ou parâmetros especificados.
+
+1 — A solução preserva parcialmente o contrato, mas apresenta pequenas
+inconsistências que podem afetar integração ou uso.
+
+2 — A solução preserva integralmente assinatura, parâmetros, tipos,
+retorno e contrato especificados.
+
+## R2 — Atendimento aos requisitos explícitos
+
+0 — Um ou mais requisitos essenciais não são implementados ou são
+implementados de maneira incompatível.
+
+1 — A maior parte dos requisitos é atendida, mas existe omissão,
+ambiguidade ou implementação parcial.
+
+2 — Todos os requisitos explícitos identificáveis no enunciado são
+atendidos.
+
+## R3 — Uso coerente das dependências fornecidas
+
+0 — A solução inventa APIs, objetos ou bibliotecas, utiliza dependências
+de maneira incompatível ou ignora dependências essenciais.
+
+1 — O uso das dependências é parcialmente adequado, mas apresenta
+alguma inconsistência ou escolha questionável.
+
+2 — As dependências fornecidas são utilizadas de forma coerente com o
+contexto e com o contrato da tarefa.
+
+## R4 — Ausência de comportamento incompatível
+
+0 — A solução introduz comportamento claramente incompatível com o
+enunciado, efeitos colaterais indevidos ou lógica contraditória.
+
+1 — Existem pequenas incompatibilidades ou decisões discutíveis, mas a
+intenção principal da tarefa é preservada.
+
+2 — Não há comportamento evidentemente incompatível com a especificação.
+
+## R5 — Adequação ao contexto ESP32 e sistemas embarcados
+
+0 — A solução apresenta decisões claramente inadequadas ao ESP32 ou ao
+contexto embarcado descrito.
+
+1 — A solução é utilizável, mas possui escolhas que podem ser melhoradas
+para o contexto embarcado.
+
+2 — A solução é adequada ao contexto ESP32, respeitando as restrições e
+o estilo esperado para sistemas embarcados.
+
+## Escore
+
+Total = R1 + R2 + R3 + R4 + R5
+
+Faixa:
+
+0 a 10 pontos.
+
+O juiz deve também fornecer uma justificativa curta e objetiva.
+
+FORMATO OBRIGATÓRIO DA RESPOSTA
+
+Responda SOMENTE com JSON válido, sem Markdown e sem qualquer texto adicional.
+
+Use exatamente esta estrutura:
+
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "texto curto"
+}
+
+REGRAS DA SAÍDA
+
+- R1 deve ser inteiro entre 0 e 2.
+- R2 deve ser inteiro entre 0 e 2.
+- R3 deve ser inteiro entre 0 e 2.
+- R4 deve ser inteiro entre 0 e 2.
+- R5 deve ser inteiro entre 0 e 2.
+- total deve ser exatamente a soma de R1 + R2 + R3 + R4 + R5.
+- justificativa deve conter no máximo 3 frases.
+- Não inclua Markdown.
+- Não inclua texto antes ou depois do JSON.

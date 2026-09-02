@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Assinatura preservada e todos os limites de classificação implementados corretamente com os textos exatos exigidos. Uso correto de isnan e String, compatível com ambiente Arduino/ESP32. Não há comportamento incompatível ou inadequado ao contexto embarcado."
+}

@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura é preservada e a fórmula NOAA é implementada corretamente com conversões de Fahrenheit/Celsius e verificação de limites -50/100 retornando NAN. Usa math.h de forma adequada e não introduz efeitos colaterais nem código supérfluo, sendo apropriado para ESP32."
+}

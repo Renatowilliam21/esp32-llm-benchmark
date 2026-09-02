@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura foi preservada e o cálculo usa a fórmula de Magnus antes de aplicar corretamente a expressão do ITGU. A dependência matemática e a função auxiliar são compatíveis com Arduino/ESP32."
+}

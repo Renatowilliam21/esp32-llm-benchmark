@@ -1,0 +1,1 @@
+{"R1":2,"R2":1,"R3":0,"R4":2,"R5":1,"total":6,"justificativa":"A assinatura e o fluxo geral de GET, POST, persistência, redirecionamento 303 e inicialização do servidor foram preservados. Porém, server.htmlEscape não pertence à API usual de WebServer e as quatro funções extern de estado não são fornecidas pelo contexto nem implementadas, comprometendo compilação e integração."}

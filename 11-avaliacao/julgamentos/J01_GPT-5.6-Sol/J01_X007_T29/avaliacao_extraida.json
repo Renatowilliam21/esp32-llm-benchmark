@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 1,
+  "R3": 2,
+  "R4": 0,
+  "R5": 2,
+  "total": 7,
+  "justificativa": "A assinatura e o fluxo de envio, checksum e retenção em RAM são preservados. Porém, ao remover um registro da EEPROM, o código apenas decrementa totalRegistros e não avança indiceRegistroAtual, podendo reler o mesmo slot e drenar incorretamente filas com múltiplos registros."
+}

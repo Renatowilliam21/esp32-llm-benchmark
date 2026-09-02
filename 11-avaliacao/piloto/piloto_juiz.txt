@@ -1,0 +1,71 @@
+Você atua como juiz técnico independente em um experimento de avaliação
+de código para ESP32.
+
+Avalie somente o material apresentado.
+
+Não reescreva o código.
+
+TAREFA
+
+Implementar uma função que determine se um valor float está dentro de
+um intervalo inclusivo.
+
+ASSINATURA
+
+bool faixaValida(float valor, float minimo, float maximo);
+
+REQUISITOS
+
+- Retornar false caso valor seja NaN.
+- Retornar true quando minimo <= valor <= maximo.
+- Limites são inclusivos.
+- Não alterar a assinatura.
+
+CÓDIGO CANDIDATO
+
+bool faixaValida(float valor, float minimo, float maximo) {
+    if (isnan(valor)) {
+        return false;
+    }
+
+    return valor >= minimo && valor <= maximo;
+}
+
+RUBRICA
+
+R1 — Atendimento ao contrato e assinatura.
+0 = não atende
+1 = atende parcialmente
+2 = atende integralmente
+
+R2 — Atendimento aos requisitos explícitos.
+0 = não atende
+1 = atende parcialmente
+2 = atende integralmente
+
+R3 — Uso coerente das dependências fornecidas.
+0 = inadequado
+1 = parcialmente adequado
+2 = adequado
+
+R4 — Ausência de comportamento incompatível.
+0 = incompatível
+1 = pequenas ressalvas
+2 = adequado
+
+R5 — Adequação ao contexto ESP32 e sistemas embarcados.
+0 = inadequado
+1 = parcialmente adequado
+2 = adequado
+
+Responda SOMENTE com JSON válido:
+
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "texto curto"
+}

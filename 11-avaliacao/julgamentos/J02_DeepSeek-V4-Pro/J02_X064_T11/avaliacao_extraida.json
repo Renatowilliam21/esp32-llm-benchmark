@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o contrato foram preservados, a condição de debounce foi implementada corretamente e as variáveis globais fornecidas foram usadas sem redefinição. A lógica é curta, não bloqueante e adequada ao contexto ESP32."
+}

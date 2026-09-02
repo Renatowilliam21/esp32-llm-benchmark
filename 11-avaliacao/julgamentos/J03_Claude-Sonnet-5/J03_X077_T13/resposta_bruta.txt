@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "O código implementa corretamente a assinatura solicitada, usando Wire.beginTransmission, write, endTransmission(false) e requestFrom conforme especificado. Trata adequadamente as falhas de transmissão e ausência de dados, retornando 0 nesses casos. É idiomático e adequado ao contexto ESP32/Arduino."
+}

@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura foi preservada e a ISR implementa exatamente o limiar solicitado, incrementando e atualizando as globais apenas quando o pulso é aceito. A rotina é curta, não bloqueante e a subtração com unsigned mantém comportamento adequado em caso de estouro de millis()."
+}

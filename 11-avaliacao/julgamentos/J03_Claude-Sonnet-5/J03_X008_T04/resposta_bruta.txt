@@ -1,0 +1,11 @@
+```json
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o tipo de retorno são preservados corretamente. A conversão ADC (0-4095) para tensão (3.3V) e depois para índice UV segue exatamente a fórmula especificada, com clamp adequado para evitar valores negativos. O uso de analogRead() é coerente com o contexto ESP32 e a solução é simples, determinística e adequada ao ambiente embarcado."
+}
+```

@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o contrato são preservados integralmente. A lógica de priorização BME280/BMP280, conversão Pa para hPa e validação de faixa com NAN estão corretas. Uso das dependências e cálculo de altitude são coerentes e adequados ao contexto ESP32."
+}

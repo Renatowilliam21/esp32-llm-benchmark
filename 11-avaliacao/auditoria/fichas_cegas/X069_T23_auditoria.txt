@@ -1,0 +1,381 @@
+Você atua como juiz técnico independente em um experimento de avaliação de código para ESP32.
+
+REGRAS DE JULGAMENTO
+
+1. Avalie somente o material apresentado.
+2. A identidade do modelo que gerou o código é desconhecida e irrelevante.
+3. Não tente inferir qual modelo produziu a solução.
+4. Não execute o código.
+5. Não reescreva nem corrija a solução.
+6. Não proponha código alternativo.
+7. Não considere resultados externos de compilação ou testes.
+8. Não considere avaliações anteriores.
+9. Utilize exclusivamente a tarefa, o código candidato e a rubrica abaixo.
+10. Faça o julgamento de forma independente.
+
+IDENTIFICADOR ANÔNIMO
+
+X069
+
+TAREFA
+
+T23
+
+ESPECIFICAÇÃO ORIGINAL DA TAREFA
+
+Você está participando de um experimento de geração de código para ESP32.
+
+REGRAS GERAIS
+1. Linguagem: C++ para Arduino/ESP32.
+2. Gere somente a implementação solicitada.
+3. Não inclua explicações, comentários de análise, Markdown ou blocos ```; responda somente com código-fonte.
+4. Preserve exatamente os nomes e assinaturas fornecidos.
+5. Não altere requisitos para simplificar a solução.
+6. Não crie bibliotecas fictícias ou APIs inexistentes.
+7. Você pode criar pequenas funções auxiliares quando necessário, desde que não altere o contrato pedido.
+8. Não implemente setup() ou loop() quando eles não forem explicitamente solicitados.
+9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
+10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
+
+TAREFA: T23 — inicializarSensores
+NÍVEL: Difícil
+
+ASSINATURA/CONTRATO
+void inicializarSensores();
+
+ENUNCIADO
+Implemente rotina de inicialização tolerante a falhas para DHT22, BME280/BMP280, AHT10, SHT41, VEML7700, ENS160, RTC e EEPROM. Diferencie BME280 (ID 0x60) de BMP280 (ID 0x58), tente endereços I2C alternativos 0x76/0x77, use ENS160 em 0x52 e fallback 0x53, configure SHT41 em alta precisão sem heater, mantenha LDR como fallback se VEML falhar, ajuste RTC para data/hora de compilação se lostPower(), configure ADC com 12 bits e ADC_11db e atualize flags de disponibilidade/saúde.
+
+CONTEXTO E RESTRIÇÕES
+Use objetos e flags globais correspondentes; ausência de um sensor não pode abortar toda a rotina.
+
+SAÍDA
+Retorne somente o código C++ necessário para implementar a tarefa.
+
+
+CÓDIGO CANDIDATO
+
+#include <Arduino.h>
+#include <Wire.h>
+#include <DHT.h>
+#include <Adafruit_BME280.h>
+#include <Adafruit_BMP280.h>
+#include <Adafruit_AHTX0.h>
+#include <Adafruit_SHT4x.h>
+#include <Adafruit_VEML7700.h>
+#include <ScioSense_ENS160.h>
+#include <RTClib.h>
+#include <EEPROM.h>
+
+// ---------------------------------------------------------------------
+// Objetos e flags globais assumidos como já existentes no projeto.
+// Declarados aqui como extern para permitir a compilação isolada
+// desta unidade, sem redefinir seus valores.
+// ---------------------------------------------------------------------
+extern DHT dht;
+extern Adafruit_BME280 bme;
+extern Adafruit_BMP280 bmp;
+extern Adafruit_AHTX0 aht;
+extern Adafruit_SHT4x sht4;
+extern Adafruit_VEML7700 veml;
+extern ScioSense_ENS160 ens160;
+extern RTC_DS3231 rtc;
+
+extern bool dhtDisponivel;
+extern bool bmeDisponivel;
+extern bool bmpDisponivel;
+extern bool ahtDisponivel;
+extern bool sht4Disponivel;
+extern bool vemlDisponivel;
+extern bool ldrFallbackAtivo;
+extern bool ens160Disponivel;
+extern bool rtcDisponivel;
+extern bool eepromDisponivel;
+
+extern const int PINO_LDR;
+extern const size_t EEPROM_TAMANHO;
+
+// ---------------------------------------------------------------------
+// Funções auxiliares internas
+// ---------------------------------------------------------------------
+static bool inicializarBmeOuBmp() {
+  const uint8_t enderecos[2] = {0x76, 0x77};
+
+  for (uint8_t i = 0; i < 2; i++) {
+    if (bme.begin(enderecos[i])) {
+      uint8_t id = bme.sensorID();
+      if (id == 0x60) {
+        bmeDisponivel = true;
+        bmpDisponivel = false;
+        return true;
+      }
+    }
+  }
+
+  for (uint8_t i = 0; i < 2; i++) {
+    if (bmp.begin(enderecos[i])) {
+      uint8_t id = bmp.sensorID();
+      if (id == 0x58) {
+        bmpDisponivel = true;
+        bmeDisponivel = false;
+        return true;
+      }
+    }
+  }
+
+  bmeDisponivel = false;
+  bmpDisponivel = false;
+  return false;
+}
+
+static bool inicializarEns160() {
+  if (ens160.begin(0x52)) {
+    ens160.setMode(ENS160_OPMODE_STD);
+    ens160Disponivel = true;
+    return true;
+  }
+
+  if (ens160.begin(0x53)) {
+    ens160.setMode(ENS160_OPMODE_STD);
+    ens160Disponivel = true;
+    return true;
+  }
+
+  ens160Disponivel = false;
+  return false;
+}
+
+static bool inicializarSht41() {
+  if (!sht4.begin()) {
+    sht4Disponivel = false;
+    return false;
+  }
+
+  sht4.setPrecision(SHT4X_HIGH_PRECISION);
+  sht4.setHeater(SHT4X_NO_HEATER);
+  sht4Disponivel = true;
+  return true;
+}
+
+static bool inicializarVeml() {
+  if (veml.begin()) {
+    vemlDisponivel = true;
+    ldrFallbackAtivo = false;
+    return true;
+  }
+
+  vemlDisponivel = false;
+  ldrFallbackAtivo = true;
+  pinMode(PINO_LDR, INPUT);
+  return false;
+}
+
+static bool inicializarRtc() {
+  if (!rtc.begin()) {
+    rtcDisponivel = false;
+    return false;
+  }
+
+  rtcDisponivel = true;
+
+  if (rtc.lostPower()) {
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  }
+
+  return true;
+}
+
+static bool inicializarEepromInterna() {
+  if (EEPROM.begin(EEPROM_TAMANHO)) {
+    eepromDisponivel = true;
+    return true;
+  }
+
+  eepromDisponivel = false;
+  return false;
+}
+
+static void configurarAdc() {
+  analogReadResolution(12);
+  analogSetAttenuation(ADC_11db);
+}
+
+// ---------------------------------------------------------------------
+// Implementação principal
+// ---------------------------------------------------------------------
+void inicializarSensores() {
+  Wire.begin();
+
+  // DHT22
+  dht.begin();
+  dhtDisponivel = true;
+
+  // BME280 / BMP280 (com fallback de endereço I2C)
+  inicializarBmeOuBmp();
+
+  // AHT10
+  ahtDisponivel = aht.begin();
+
+  // SHT41 em alta precisão, sem heater
+  inicializarSht41();
+
+  // VEML7700 com fallback para LDR
+  inicializarVeml();
+
+  // ENS160 com fallback de endereço I2C
+  inicializarEns160();
+
+  // RTC com ajuste em caso de perda de energia
+  inicializarRtc();
+
+  // EEPROM
+  inicializarEepromInterna();
+
+  // Configuração do ADC
+  configurarAdc();
+}
+
+RUBRICA DE AVALIAÇÃO
+
+# Rubrica de Julgamento Qualitativo
+
+Cada solução deve ser avaliada de forma independente, sem conhecimento
+do modelo que produziu o código.
+
+Cada critério recebe nota 0, 1 ou 2.
+
+## R1 — Atendimento ao contrato e assinatura
+
+0 — A solução altera, ignora ou viola de forma relevante o contrato,
+assinatura, tipo de retorno ou parâmetros especificados.
+
+1 — A solução preserva parcialmente o contrato, mas apresenta pequenas
+inconsistências que podem afetar integração ou uso.
+
+2 — A solução preserva integralmente assinatura, parâmetros, tipos,
+retorno e contrato especificados.
+
+## R2 — Atendimento aos requisitos explícitos
+
+0 — Um ou mais requisitos essenciais não são implementados ou são
+implementados de maneira incompatível.
+
+1 — A maior parte dos requisitos é atendida, mas existe omissão,
+ambiguidade ou implementação parcial.
+
+2 — Todos os requisitos explícitos identificáveis no enunciado são
+atendidos.
+
+## R3 — Uso coerente das dependências fornecidas
+
+0 — A solução inventa APIs, objetos ou bibliotecas, utiliza dependências
+de maneira incompatível ou ignora dependências essenciais.
+
+1 — O uso das dependências é parcialmente adequado, mas apresenta
+alguma inconsistência ou escolha questionável.
+
+2 — As dependências fornecidas são utilizadas de forma coerente com o
+contexto e com o contrato da tarefa.
+
+## R4 — Ausência de comportamento incompatível
+
+0 — A solução introduz comportamento claramente incompatível com o
+enunciado, efeitos colaterais indevidos ou lógica contraditória.
+
+1 — Existem pequenas incompatibilidades ou decisões discutíveis, mas a
+intenção principal da tarefa é preservada.
+
+2 — Não há comportamento evidentemente incompatível com a especificação.
+
+## R5 — Adequação ao contexto ESP32 e sistemas embarcados
+
+0 — A solução apresenta decisões claramente inadequadas ao ESP32 ou ao
+contexto embarcado descrito.
+
+1 — A solução é utilizável, mas possui escolhas que podem ser melhoradas
+para o contexto embarcado.
+
+2 — A solução é adequada ao contexto ESP32, respeitando as restrições e
+o estilo esperado para sistemas embarcados.
+
+## Escore
+
+Total = R1 + R2 + R3 + R4 + R5
+
+Faixa:
+
+0 a 10 pontos.
+
+O juiz deve também fornecer uma justificativa curta e objetiva.
+
+FORMATO OBRIGATÓRIO DA RESPOSTA
+
+Responda SOMENTE com JSON válido, sem Markdown e sem qualquer texto adicional.
+
+Use exatamente esta estrutura:
+
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "texto curto"
+}
+
+REGRAS DA SAÍDA
+
+- R1 deve ser inteiro entre 0 e 2.
+- R2 deve ser inteiro entre 0 e 2.
+- R3 deve ser inteiro entre 0 e 2.
+- R4 deve ser inteiro entre 0 e 2.
+- R5 deve ser inteiro entre 0 e 2.
+- total deve ser exatamente a soma de R1 + R2 + R3 + R4 + R5.
+- justificativa deve conter no máximo 3 frases.
+- Não inclua Markdown.
+- Não inclua texto antes ou depois do JSON.
+
+==================================================
+AUDITORIA HUMANA
+==================================================
+
+Avalie o código utilizando os mesmos critérios
+aplicados aos juízes LLM.
+
+R1 — Contrato e assinatura
+0 = não atende
+1 = atende parcialmente
+2 = atende completamente
+
+R2 — Requisitos explícitos
+0 = não atende
+1 = atende parcialmente
+2 = atende completamente
+
+R3 — Uso coerente das dependências
+0 = inadequado
+1 = parcialmente adequado
+2 = adequado
+
+R4 — Ausência de comportamento incompatível
+0 = incompatibilidades graves
+1 = incompatibilidades menores
+2 = sem incompatibilidades relevantes
+
+R5 — Adequação ao contexto ESP32/embarcado
+0 = inadequado
+1 = parcialmente adequado
+2 = adequado
+
+Preencha:
+
+R1 =
+R2 =
+R3 =
+R4 =
+R5 =
+
+TOTAL =
+
+JUSTIFICATIVA =

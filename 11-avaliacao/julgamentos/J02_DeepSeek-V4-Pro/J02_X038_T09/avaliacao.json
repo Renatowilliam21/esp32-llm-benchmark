@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o tipo de retorno estão corretos. Todos os intervalos e textos exigidos foram implementados, incluindo o caso NaN retornando String vazia. O uso de isnan e de String é adequado ao contexto ESP32/Arduino."
+}

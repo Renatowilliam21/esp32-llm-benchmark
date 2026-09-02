@@ -1,0 +1,23 @@
+{
+  "juiz_id": "J03",
+  "juiz_nome": "Claude-Sonnet-5",
+  "provider": "anthropic",
+  "arquivo_prompt": "11-avaliacao\\prompts_julgamento\\J03\\J03_X065_T25.txt",
+  "model_requested": "claude-sonnet-5",
+  "model_returned": "claude-sonnet-5",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 2302,
+    "output_tokens": 108
+  },
+  "raw_metadata": {
+    "response_id": "msg_011CecuAYiKakvUZtaczu8to",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "inicio_utc": "2026-09-01T14:45:49.027369+00:00",
+  "fim_utc": "2026-09-01T14:45:51.272578+00:00",
+  "duracao_segundos": 2.245,
+  "status_json": "valido",
+  "erro_json": null
+}

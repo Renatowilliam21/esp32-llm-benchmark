@@ -1,0 +1,24 @@
+{
+  "juiz_id": "J02",
+  "juiz_nome": "DeepSeek-V4-Pro",
+  "provider": "deepseek",
+  "arquivo_prompt": "11-avaliacao\\prompts_julgamento\\J02\\J02_X059_T29.txt",
+  "model_requested": "deepseek-v4-pro",
+  "model_returned": "deepseek-v4-pro",
+  "stop_reason": "stop",
+  "usage": {
+    "input_tokens": 2054,
+    "output_tokens": 4297,
+    "total_tokens": 6351
+  },
+  "raw_metadata": {
+    "response_id": "bf307c61-e3e4-47f2-ad7a-86ac6dba63b1",
+    "api": "DeepSeek Chat Completions API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "inicio_utc": "2026-09-01T13:53:51.105703+00:00",
+  "fim_utc": "2026-09-01T13:54:44.183284+00:00",
+  "duracao_segundos": 53.078,
+  "status_json": "valido",
+  "erro_json": null
+}

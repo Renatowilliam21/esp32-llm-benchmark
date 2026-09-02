@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A implementação preserva a assinatura, usa analogRead() e converte corretamente a leitura de 0..4095 para 3,3 V e depois para índice UV. O retorno é explicitamente limitado para não ser negativo e não há comportamento incompatível."
+}

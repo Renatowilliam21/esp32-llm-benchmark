@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura void loop() é preservada e todos os requisitos (watchdog, servidor admin, comandos seriais, reconexão Wi-Fi com retorno, coleta/agregação/envio baseados em millis com atualização dos timestamps apenas ao disparar) são atendidos corretamente. Usa as globais e constantes fornecidas de forma coerente, sem delay no fluxo normal, adequado ao contexto embarcado ESP32."
+}

@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Implementação cumpre integralmente o contrato e os requisitos, com tratamento tolerante a falhas por sensor, validação de faixas, teste de degrau na temperatura e acumulação seletiva. As dependências fornecidas são usadas de forma coerente e o código é adequado ao contexto embarcado."
+}

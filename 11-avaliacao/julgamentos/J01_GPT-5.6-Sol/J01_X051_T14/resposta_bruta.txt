@@ -1,0 +1,1 @@
+{"R1":2,"R2":1,"R3":1,"R4":1,"R5":2,"total":7,"justificativa":"A assinatura, a prioridade entre sensores, a conversão Pa para hPa e o tratamento de pressão inválida estão corretos. Porém, a pressão medida é passada a readAltitude como pressão ao nível do mar, o que torna o cálculo de altitude inadequado e tipicamente próximo de zero."}

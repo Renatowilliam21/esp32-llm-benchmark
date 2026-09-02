@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o contrato são preservados, e a implementação usa Wire no endereço 0x50, envia o endereço interno alto e baixo, solicita exatamente 1 byte e retorna 0 quando não há byte disponível. Não há dependências fictícias nem comportamento incompatível evidente no contexto ESP32."
+}

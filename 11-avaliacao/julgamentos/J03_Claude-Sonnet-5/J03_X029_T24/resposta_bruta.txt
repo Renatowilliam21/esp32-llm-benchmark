@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "O código preserva a assinatura, implementa corretamente a prioridade de fontes e a validação de faixas, atualiza fonteAmbienteAtual e trocasDeFonteAmbiente conforme especificado, e usa as dependências de forma coerente com o contexto embarcado. A checagem de 'novaFonte[0]==\"n\"' é um pouco frágil estilisticamente, mas não compromete a correção funcional."
+}

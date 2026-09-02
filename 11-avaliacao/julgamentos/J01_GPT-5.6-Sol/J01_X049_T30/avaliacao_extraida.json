@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 1,
+  "R5": 1,
+  "total": 8,
+  "justificativa": "A assinatura, as rotas, a persistência, o redirecionamento 303 e a inicialização do servidor atendem ao contrato. Contudo, valores dinâmicos são inseridos no HTML sem escape, inclusive em atributos, e a montagem por muitas concatenações de String pode causar fragmentação de memória no ESP32."
+}

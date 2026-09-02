@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A solução preserva exatamente a assinatura e o contrato, implementa a detecção no endereço 0x50 usando Wire.beginTransmission/endTransmission e retorna true somente quando endTransmission é 0. Não inicializa o barramento e não introduz comportamento incompatível."
+}

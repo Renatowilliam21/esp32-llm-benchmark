@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Assinatura preservada, fórmula NOAA implementada corretamente com conversões de temperatura e verificação de limites -50/100 retornando NAN. Uso de float e const é adequado ao contexto embarcado ESP32, sem dependências externas indevidas ou efeitos colaterais."
+}

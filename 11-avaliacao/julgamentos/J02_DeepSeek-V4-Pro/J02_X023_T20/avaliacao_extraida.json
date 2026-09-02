@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A solução preserva integralmente a assinatura e o contrato, lê os bytes da EEPROM no endereço calculado, usa as dependências fornecidas e retorna corretamente a comparação do checksum armazenado com o recalculado."
+}

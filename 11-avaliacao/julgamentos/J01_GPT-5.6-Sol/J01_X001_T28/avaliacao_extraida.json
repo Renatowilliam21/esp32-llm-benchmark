@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 1,
+  "R4": 1,
+  "R5": 1,
+  "total": 7,
+  "justificativa": "A assinatura e os requisitos funcionais principais foram preservados, incluindo seleção do cliente, timeouts, headers, POST e tratamento de códigos. Porém, na falha de http.begin(), o transporte é destruído antes do HTTPClient, que pode ainda manter sua referência, criando risco de acesso a objeto já liberado; a alocação dinâmica também é uma escolha menos adequada ao contexto embarcado."
+}

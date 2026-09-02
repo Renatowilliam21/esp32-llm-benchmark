@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Preserva integralmente a assinatura e implementa corretamente o tratamento de NaN e todas as faixas, incluindo os limites. Usa os textos exatos e APIs coerentes com Arduino/ESP32, sem comportamento incompatível."
+}

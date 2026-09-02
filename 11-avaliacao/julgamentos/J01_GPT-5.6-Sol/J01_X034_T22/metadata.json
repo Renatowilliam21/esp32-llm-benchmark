@@ -1,0 +1,24 @@
+{
+  "juiz_id": "J01",
+  "juiz_nome": "GPT-5.6-Sol",
+  "provider": "openai",
+  "arquivo_prompt": "11-avaliacao\\prompts_julgamento\\J01\\J01_X034_T22.txt",
+  "model_requested": "gpt-5.6-sol",
+  "model_returned": "gpt-5.6-sol",
+  "stop_reason": "completed",
+  "usage": {
+    "input_tokens": 1486,
+    "output_tokens": 213,
+    "total_tokens": 1699
+  },
+  "raw_metadata": {
+    "response_id": "resp_00340e25b1a4373a006a96d7f35c2887d2b0570c6223db7a24",
+    "api": "OpenAI Responses API",
+    "reasoning_configuration": "provider/default unless overridden by model/API"
+  },
+  "inicio_utc": "2026-09-01T13:49:38.021993+00:00",
+  "fim_utc": "2026-09-01T13:49:43.223105+00:00",
+  "duracao_segundos": 5.201,
+  "status_json": "valido",
+  "erro_json": null
+}

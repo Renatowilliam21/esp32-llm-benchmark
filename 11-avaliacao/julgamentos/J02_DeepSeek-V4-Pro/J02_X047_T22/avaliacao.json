@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 1,
+  "R5": 2,
+  "total": 9,
+  "justificativa": "O código atende ao contrato e aos requisitos principais, com orquestração por millis() e atualização correta dos timestamps. A única ressalva é o uso de Serial.readStringUntil, que pode bloquear temporariamente o loop, contrastando levemente com a orientação de evitar delays. As dependências fornecidas e APIs do ESP32 são utilizadas de forma coerente."
+}

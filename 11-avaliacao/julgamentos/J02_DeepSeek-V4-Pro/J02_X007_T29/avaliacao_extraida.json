@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 1,
+  "R3": 2,
+  "R4": 0,
+  "R5": 2,
+  "total": 7,
+  "justificativa": "A assinatura e o uso das dependências estão corretos. Entretanto, o código não avança o índice do registro mais antigo na EEPROM, causando perda ou reprocessamento indevido e violando a remoção lógica da fila; esse é um comportamento incompatível. A lógica para RAM está adequada."
+}

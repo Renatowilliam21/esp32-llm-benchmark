@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 1,
+  "R4": 1,
+  "R5": 2,
+  "total": 8,
+  "justificativa": "A solução atende ao contrato e aos requisitos principais, com tolerância a falhas. Contudo, usa F(__DATE__)/F(__TIME__) no construtor DateTime, o que provavelmente não compila/incompatível com RTClib. Demais APIs são coerentes."
+}

@@ -1,0 +1,23 @@
+{
+  "juiz_id": "J03",
+  "juiz_nome": "Claude-Sonnet-5",
+  "provider": "anthropic",
+  "arquivo_prompt": "11-avaliacao\\prompts_julgamento\\J03\\J03_X084_T08.txt",
+  "model_requested": "claude-sonnet-5",
+  "model_returned": "claude-sonnet-5",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 2233,
+    "output_tokens": 179
+  },
+  "raw_metadata": {
+    "response_id": "msg_011Cecun9UabKJLLbr9ZEeWx",
+    "api": "Anthropic Messages API",
+    "thinking_configuration": "provider/default"
+  },
+  "inicio_utc": "2026-09-01T14:53:52.069331+00:00",
+  "fim_utc": "2026-09-01T14:53:56.057702+00:00",
+  "duracao_segundos": 3.988,
+  "status_json": "invalido",
+  "erro_json": "Resposta não contém JSON válido: Expecting value: line 1 column 1 (char 0)"
+}

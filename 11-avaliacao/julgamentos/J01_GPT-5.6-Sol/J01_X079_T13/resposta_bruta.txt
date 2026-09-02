@@ -1,0 +1,1 @@
+{"R1":2,"R2":2,"R3":2,"R4":2,"R5":2,"total":10,"justificativa":"Preserva integralmente a assinatura e realiza a leitura do registrador 0xD0 via Wire usando endTransmission(false). Trata falha de transmissão e ausência de bytes pelo retorno de requestFrom, sem reinicializar o barramento."}

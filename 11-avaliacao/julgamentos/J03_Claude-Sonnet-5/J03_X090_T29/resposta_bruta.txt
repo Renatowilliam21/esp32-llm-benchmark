@@ -1,0 +1,9 @@
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "Nenhum código candidato foi apresentado para avaliação, impossibilitando a análise de qualquer critério da rubrica. Sem implementação, não há como verificar contrato, requisitos, dependências, compatibilidade ou adequação ao ESP32."
+}

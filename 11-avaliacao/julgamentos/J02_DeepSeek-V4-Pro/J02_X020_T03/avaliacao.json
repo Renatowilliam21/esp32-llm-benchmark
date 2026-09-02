@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A função preserva integralmente o contrato, inicia a transmissão no endereço 0x50 usando a instância global Wire e retorna true somente se endTransmission() for 0. Não inicializa o barramento nem introduz comportamento incompatível. A solução é adequada e determinística para o contexto ESP32."
+}

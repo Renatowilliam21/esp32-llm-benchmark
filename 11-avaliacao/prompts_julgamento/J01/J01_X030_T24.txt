@@ -1,0 +1,214 @@
+Você atua como juiz técnico independente em um experimento de avaliação de código para ESP32.
+
+REGRAS DE JULGAMENTO
+
+1. Avalie somente o material apresentado.
+2. A identidade do modelo que gerou o código é desconhecida e irrelevante.
+3. Não tente inferir qual modelo produziu a solução.
+4. Não execute o código.
+5. Não reescreva nem corrija a solução.
+6. Não proponha código alternativo.
+7. Não considere resultados externos de compilação ou testes.
+8. Não considere avaliações anteriores.
+9. Utilize exclusivamente a tarefa, o código candidato e a rubrica abaixo.
+10. Faça o julgamento de forma independente.
+
+IDENTIFICADOR ANÔNIMO
+
+X030
+
+TAREFA
+
+T24
+
+ESPECIFICAÇÃO ORIGINAL DA TAREFA
+
+Você está participando de um experimento de geração de código para ESP32.
+
+REGRAS GERAIS
+1. Linguagem: C++ para Arduino/ESP32.
+2. Gere somente a implementação solicitada.
+3. Não inclua explicações, comentários de análise, Markdown ou blocos ```; responda somente com código-fonte.
+4. Preserve exatamente os nomes e assinaturas fornecidos.
+5. Não altere requisitos para simplificar a solução.
+6. Não crie bibliotecas fictícias ou APIs inexistentes.
+7. Você pode criar pequenas funções auxiliares quando necessário, desde que não altere o contrato pedido.
+8. Não implemente setup() ou loop() quando eles não forem explicitamente solicitados.
+9. Quando o enunciado disser que objetos, constantes, structs ou funções já existem, apenas os utilize; não redefina-os.
+10. Priorize código determinístico e compilável no ecossistema Arduino-ESP32.
+
+TAREFA: T24 — lerAmbiente
+NÍVEL: Difícil
+
+ASSINATURA/CONTRATO
+void lerAmbiente(float &temperatura, float &umidade);
+
+ENUNCIADO
+Selecione a primeira fonte saudável e com valores válidos nesta prioridade: SHT41, BME280, AHT10, DHT22. Faixas válidas: temperatura -40..85 °C e umidade 0..100%. Se uma fonte retornar dado inválido, tente a próxima. Se nenhuma for válida, retorne NAN/NAN e fonteAmbienteAtual='nenhuma'. Quando a fonte selecionada for diferente da fonteAmbienteAtual anterior, atualize-a e incremente trocasDeFonteAmbiente.
+
+CONTEXTO E RESTRIÇÕES
+Considere flags/objetos globais dos sensores, ultimaTempDHT, ultimaUmidDHT, fonteAmbienteAtual e trocasDeFonteAmbiente.
+
+SAÍDA
+Retorne somente o código C++ necessário para implementar a tarefa.
+
+
+CÓDIGO CANDIDATO
+
+extern bool sht41Saudavel;
+extern float sht41Temperatura;
+extern float sht41Umidade;
+
+extern bool bme280Saudavel;
+extern float bme280Temperatura;
+extern float bme280Umidade;
+
+extern bool aht10Saudavel;
+extern float aht10Temperatura;
+extern float aht10Umidade;
+
+extern float ultimaTempDHT;
+extern float ultimaUmidDHT;
+
+extern String fonteAmbienteAtual;
+extern unsigned long trocasDeFonteAmbiente;
+
+static bool valoresValidos(float temp, float umid) {
+    if (isnan(temp) || isnan(umid)) return false;
+    if (temp < -40.0f || temp > 85.0f) return false;
+    if (umid < 0.0f || umid > 100.0f) return false;
+    return true;
+}
+
+void lerAmbiente(float &temperatura, float &umidade) {
+    String novaFonte = "nenhuma";
+    float tempSelecionada = NAN;
+    float umidSelecionada = NAN;
+
+    if (sht41Saudavel && valoresValidos(sht41Temperatura, sht41Umidade)) {
+        novaFonte = "SHT41";
+        tempSelecionada = sht41Temperatura;
+        umidSelecionada = sht41Umidade;
+    } else if (bme280Saudavel && valoresValidos(bme280Temperatura, bme280Umidade)) {
+        novaFonte = "BME280";
+        tempSelecionada = bme280Temperatura;
+        umidSelecionada = bme280Umidade;
+    } else if (aht10Saudavel && valoresValidos(aht10Temperatura, aht10Umidade)) {
+        novaFonte = "AHT10";
+        tempSelecionada = aht10Temperatura;
+        umidSelecionada = aht10Umidade;
+    } else if (valoresValidos(ultimaTempDHT, ultimaUmidDHT)) {
+        novaFonte = "DHT22";
+        tempSelecionada = ultimaTempDHT;
+        umidSelecionada = ultimaUmidDHT;
+    }
+
+    if (novaFonte != fonteAmbienteAtual) {
+        fonteAmbienteAtual = novaFonte;
+        trocasDeFonteAmbiente++;
+    }
+
+    temperatura = tempSelecionada;
+    umidade = umidSelecionada;
+}
+
+RUBRICA DE AVALIAÇÃO
+
+# Rubrica de Julgamento Qualitativo
+
+Cada solução deve ser avaliada de forma independente, sem conhecimento
+do modelo que produziu o código.
+
+Cada critério recebe nota 0, 1 ou 2.
+
+## R1 — Atendimento ao contrato e assinatura
+
+0 — A solução altera, ignora ou viola de forma relevante o contrato,
+assinatura, tipo de retorno ou parâmetros especificados.
+
+1 — A solução preserva parcialmente o contrato, mas apresenta pequenas
+inconsistências que podem afetar integração ou uso.
+
+2 — A solução preserva integralmente assinatura, parâmetros, tipos,
+retorno e contrato especificados.
+
+## R2 — Atendimento aos requisitos explícitos
+
+0 — Um ou mais requisitos essenciais não são implementados ou são
+implementados de maneira incompatível.
+
+1 — A maior parte dos requisitos é atendida, mas existe omissão,
+ambiguidade ou implementação parcial.
+
+2 — Todos os requisitos explícitos identificáveis no enunciado são
+atendidos.
+
+## R3 — Uso coerente das dependências fornecidas
+
+0 — A solução inventa APIs, objetos ou bibliotecas, utiliza dependências
+de maneira incompatível ou ignora dependências essenciais.
+
+1 — O uso das dependências é parcialmente adequado, mas apresenta
+alguma inconsistência ou escolha questionável.
+
+2 — As dependências fornecidas são utilizadas de forma coerente com o
+contexto e com o contrato da tarefa.
+
+## R4 — Ausência de comportamento incompatível
+
+0 — A solução introduz comportamento claramente incompatível com o
+enunciado, efeitos colaterais indevidos ou lógica contraditória.
+
+1 — Existem pequenas incompatibilidades ou decisões discutíveis, mas a
+intenção principal da tarefa é preservada.
+
+2 — Não há comportamento evidentemente incompatível com a especificação.
+
+## R5 — Adequação ao contexto ESP32 e sistemas embarcados
+
+0 — A solução apresenta decisões claramente inadequadas ao ESP32 ou ao
+contexto embarcado descrito.
+
+1 — A solução é utilizável, mas possui escolhas que podem ser melhoradas
+para o contexto embarcado.
+
+2 — A solução é adequada ao contexto ESP32, respeitando as restrições e
+o estilo esperado para sistemas embarcados.
+
+## Escore
+
+Total = R1 + R2 + R3 + R4 + R5
+
+Faixa:
+
+0 a 10 pontos.
+
+O juiz deve também fornecer uma justificativa curta e objetiva.
+
+FORMATO OBRIGATÓRIO DA RESPOSTA
+
+Responda SOMENTE com JSON válido, sem Markdown e sem qualquer texto adicional.
+
+Use exatamente esta estrutura:
+
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "texto curto"
+}
+
+REGRAS DA SAÍDA
+
+- R1 deve ser inteiro entre 0 e 2.
+- R2 deve ser inteiro entre 0 e 2.
+- R3 deve ser inteiro entre 0 e 2.
+- R4 deve ser inteiro entre 0 e 2.
+- R5 deve ser inteiro entre 0 e 2.
+- total deve ser exatamente a soma de R1 + R2 + R3 + R4 + R5.
+- justificativa deve conter no máximo 3 frases.
+- Não inclua Markdown.
+- Não inclua texto antes ou depois do JSON.

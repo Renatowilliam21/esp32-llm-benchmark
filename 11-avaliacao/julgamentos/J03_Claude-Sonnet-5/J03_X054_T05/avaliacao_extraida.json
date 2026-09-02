@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Assinatura preservada exatamente conforme especificado. Usa isnan() corretamente para verificar NaN e comparações simples para o intervalo fechado, atendendo integralmente ao enunciado. Código simples, determinístico e adequado ao contexto embarcado ESP32."
+}

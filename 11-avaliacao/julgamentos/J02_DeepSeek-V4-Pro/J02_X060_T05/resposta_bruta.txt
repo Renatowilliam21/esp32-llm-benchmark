@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o contrato foram preservados integralmente. O código implementa exatamente os requisitos, utilizando isnan() de forma coerente e sem comportamento incompatível. A solução é adequada ao contexto ESP32."
+}

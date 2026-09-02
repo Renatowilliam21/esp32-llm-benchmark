@@ -1,0 +1,9 @@
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "Nenhum código candidato foi apresentado. Assim, a assinatura e todos os requisitos funcionais e de integração deixaram de ser implementados."
+}

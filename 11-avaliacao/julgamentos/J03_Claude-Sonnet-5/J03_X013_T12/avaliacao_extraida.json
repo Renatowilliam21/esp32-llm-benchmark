@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura é preservada exatamente como especificada. A lógica de debounce com millis() e atualização condicional de pulsosAnemometro e ultimoPulsoAnemometro atende ao enunciado corretamente. Não há uso de delay(), APIs inventadas ou efeitos colaterais indevidos, sendo adequada para uma ISR em ESP32."
+}

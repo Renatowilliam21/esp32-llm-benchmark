@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "Preserva a assinatura e atende a todos os requisitos explícitos: verificação de entradas, timeout, headers, POST e tratamento de códigos 2xx/erro. As dependências fornecidas são utilizadas corretamente, sem APIs inventadas. Não há comportamento incompatível ou inadequado para ESP32."
+}

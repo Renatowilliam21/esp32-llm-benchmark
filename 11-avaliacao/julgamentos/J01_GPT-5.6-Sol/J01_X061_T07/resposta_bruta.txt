@@ -1,0 +1,1 @@
+{"R1":2,"R2":2,"R3":2,"R4":2,"R5":2,"total":10,"justificativa":"A assinatura e o contrato foram preservados. O código calcula o ponto de orvalho pela fórmula de Magnus e aplica corretamente a expressão do ITGU, usando dependências compatíveis com Arduino/ESP32."}

@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 1,
+  "R4": 1,
+  "R5": 2,
+  "total": 8,
+  "justificativa": "A assinatura e os requisitos principais são atendidos corretamente. A comparação de fonteAmbienteAtual pode falhar dependendo do tipo (ponteiro vs String), o que introduz risco de não detectar trocas. O uso de isfinite é adequado, mas a checagem via novaFonte[0]=='n' é frágil."
+}

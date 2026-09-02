@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 1,
+  "R5": 2,
+  "total": 9,
+  "justificativa": "A assinatura é preservada e o servidor implementa GET / com página HTML exibindo estado e formulário, e POST /salvar persistindo os quatro valores em Preferences com redirecionamento 303. O código usa server e preferences de forma coerente e evita exposição indevida via escaping. Pequena inconsistência: chama preferences.begin dentro da função sem end explícito, o que pode ser questionável em termos de gerenciamento de recursos, mas não compromete a funcionalidade principal."
+}

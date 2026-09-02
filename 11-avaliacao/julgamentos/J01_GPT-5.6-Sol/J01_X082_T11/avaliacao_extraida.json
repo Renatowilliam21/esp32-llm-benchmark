@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A assinatura e o contrato foram preservados integralmente. A ISR aplica corretamente o intervalo estritamente maior que 15 ms, incrementa o contador e atualiza o instante apenas quando o pulso é aceito, mantendo execução curta e não bloqueante."
+}

@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 1,
+  "R3": 2,
+  "R4": 1,
+  "R5": 2,
+  "total": 8,
+  "justificativa": "A assinatura e uso das dependências (RTC, gravarRegistro, salvarControleEEPROM, MAX_REGISTROS) estão corretos, e a região crítica de pulsos é tratada adequadamente. Porém, o cálculo de ITGU/ITU/índice de calor é feito sempre, sem verificar 'quando houver entradas necessárias' como pede o enunciado, e a ordem de atualização de proximoRegistro após gravarRegistro pode ser questionável dependendo da implementação interna dessa função."
+}

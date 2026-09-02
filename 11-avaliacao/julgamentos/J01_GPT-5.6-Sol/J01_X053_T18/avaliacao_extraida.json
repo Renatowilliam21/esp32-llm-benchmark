@@ -1,0 +1,9 @@
+{
+  "R1": 2,
+  "R2": 2,
+  "R3": 2,
+  "R4": 2,
+  "R5": 2,
+  "total": 10,
+  "justificativa": "A implementação preserva a assinatura, usa Wire corretamente e envia os bytes alto e baixo do endereço à AT24C32 em 0x50. Finaliza a fase de endereço, solicita exatamente um byte e retorna 0 quando nenhum dado está disponível."
+}

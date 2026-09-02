@@ -1,0 +1,9 @@
+{
+  "R1": 0,
+  "R2": 0,
+  "R3": 0,
+  "R4": 0,
+  "R5": 0,
+  "total": 0,
+  "justificativa": "O código candidato está vazio, não implementa a função solicitada nem preserva sua assinatura. Nenhum requisito de inicialização, tolerância a falhas, configuração ou atualização de flags foi atendido."
+}
