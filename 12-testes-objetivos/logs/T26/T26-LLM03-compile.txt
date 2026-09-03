@@ -1,0 +1,102 @@
+﻿arduino-cli.exe : In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real\T26-LLM03-real.ino:191:
+No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T26_real.ps1:291 caractere:14
++     $saida = & arduino-cli compile `
++              ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...3-real.ino:191::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc: In function 'void gravarRegistroPendente()':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:2:23: error: 'accTemperatura' was not declared in this scope
+    2 |   bool temAmostras = (accTemperatura.contagem > 0) ||
+      |                       ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:3:24: error: 'accUmidade' was not declared in this scope; did you mean 'acUmidAr'?
+    3 |                       (accUmidade.contagem > 0) ||
+      |                        ^~~~~~~~~~
+      |                        acUmidAr
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:4:24: error: 'accTemperaturaGlobo' was not declared in this scope
+    4 |                       (accTemperaturaGlobo.contagem > 0) ||
+      |                        ^~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:5:24: error: 'accPressao' was not declared in this scope; did you mean 'acPressao'?
+    5 |                       (accPressao.contagem > 0);
+      |                        ^~~~~~~~~~
+      |                        acPressao
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:16:9: error: 'struct RegistroMeteorologico' has no member named 'timestamp'
+   16 |     reg.timestamp = agora.unixtime();
+      |         ^~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:18:9: error: 'struct RegistroMeteorologico' has no member named 'timestamp'
+   18 |     reg.timestamp = 0;
+      |         ^~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:22:9: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   22 |     reg.temperatura = accTemperatura.soma / accTemperatura.contagem;
+      |         ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:26:9: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   26 |     reg.umidade = accUmidade.soma / accUmidade.contagem;
+      |         ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:34:9: error: 'struct RegistroMeteorologico' has no member named 'temperaturaGlobo'
+   34 |     reg.temperaturaGlobo = accTemperaturaGlobo.soma / accTemperaturaGlobo.contagem;
+      |         ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:38:9: error: 'struct RegistroMeteorologico' has no member named 'itgu'
+   38 |     reg.itgu = calcularITGU(reg.temperaturaGlobo, reg.umidade);
+      |         ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:38:33: error: 'struct RegistroMeteorologico' has no member named 'temperaturaGlobo'
+   38 |     reg.itgu = calcularITGU(reg.temperaturaGlobo, reg.umidade);
+      |                                 ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:38:55: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   38 |     reg.itgu = calcularITGU(reg.temperaturaGlobo, reg.umidade);
+      |                                                       ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:42:9: error: 'struct RegistroMeteorologico' has no member named 'itu'
+   42 |     reg.itu = calcularITU(reg.temperatura, reg.umidade);
+      |         ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:42:31: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   42 |     reg.itu = calcularITU(reg.temperatura, reg.umidade);
+      |                               ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:42:48: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   42 |     reg.itu = calcularITU(reg.temperatura, reg.umidade);
+      |                                                ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:43:47: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   43 |     reg.indiceCalor = calcularIndiceCalor(reg.temperatura, reg.umidade);
+      |                                               ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:43:64: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   43 |     reg.indiceCalor = calcularIndiceCalor(reg.temperatura, reg.umidade);
+      |                                                                ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:50:22: error: 'pulsosChuva' was not declared in this scope; did you mean 'pulsosChuvaLocal'?
+   50 |   pulsosChuvaLocal = pulsosChuva;
+      |                      ^~~~~~~~~~~
+      |                      pulsosChuvaLocal
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:51:22: error: 'pulsosVento' was not declared in this scope; did you mean 'pulsosVentoLocal'?
+   51 |   pulsosVentoLocal = pulsosVento;
+      |                      ^~~~~~~~~~~
+      |                      pulsosVentoLocal
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:56:7: error: 'struct RegistroMeteorologico' has no member named 'chuva'; did you mean 'chuvaMm'?
+   56 |   reg.chuva = pulsosChuvaLocal * MM_POR_PULSO;
+      |       ^~~~~
+      |       chuvaMm
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:56:34: error: 'MM_POR_PULSO' was not declared in this scope; did you mean 'MM_POR_PULSO_CHUVA'?
+   56 |   reg.chuva = pulsosChuvaLocal * MM_POR_PULSO;
+      |                                  ^~~~~~~~~~~~
+      |                                  MM_POR_PULSO_CHUVA
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:57:7: error: 'struct RegistroMeteorologico' has no member named 'velocidadeVento'
+   57 |   reg.velocidadeVento = pulsosVentoLocal * FATOR_VENTO_KMH;
+      |       ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:57:44: error: 'FATOR_VENTO_KMH' was not declared in this scope
+   57 |   reg.velocidadeVento = pulsosVentoLocal * FATOR_VENTO_KMH;
+      |                                            ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real/candidato.inc:60:20: error: cannot convert 'RegistroMeteorologico' to 'int'
+   60 |     gravarRegistro(reg, proximoRegistro);
+      |                    ^~~
+      |                    |
+      |                    RegistroMeteorologico
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM03-real\T26-LLM03-real.ino:177:9: note:   initializing argument 1 of 'void gravarRegistro(int, RegistroMeteorologico)'
+  177 |     int indice,
+      |     ~~~~^~~~~~
+Error during build: exit status 1
+
+[92mUsed library[0m   [92mVersion[0m [90mPath[0m
+[93mRTClib[0m         2.1.4   [90mC:\Users\renat\Documents\Arduino\libraries\RTClib[0m
+[93mAdafruit BusIO[0m 1.17.4  [90mC:\Users\renat\Documents\Arduino\libraries\Adafruit_BusIO[0m
+[93mWire[0m           3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8\libraries\Wire[0m
+[93mSPI[0m            3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8\libraries\SPI[0m
+
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+

@@ -1,0 +1,4 @@
+﻿"tarefa","modelo_id","modelo","compilou","C_0_100","status","flash_bytes","ram_bytes","log"
+"T28","LLM01","GPT-5.6-Sol","1","100","PASS","1029964","48368","C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\logs\T28\T28-LLM01-compile.txt"
+"T28","LLM02","DeepSeek-V4-Pro","1","100","PASS","1028592","48368","C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\logs\T28\T28-LLM02-compile.txt"
+"T28","LLM03","Claude-Sonnet-5","1","100","PASS","1031256","48368","C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\logs\T28\T28-LLM03-compile.txt"

@@ -1,0 +1,67 @@
+ESP32-LLM BENCHMARK — RELATÓRIO ESTATÍSTICO
+================================================================
+Entrada: C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\resultados_objetivos_90.csv
+Observações: 90 (30 tarefas x 3 LLMs)
+Alfa: 0.05
+
+1. RESUMO POR MODELO
+----------------------------------------------------------------
+GPT-5.6-Sol: compilações=23/30; F=100=23/30; média C=76.67; média F=76.67
+DeepSeek-V4-Pro: compilações=22/30; F=100=20/30; média C=73.33; média F=71.00
+Claude-Sonnet-5: compilações=21/30; F=100=21/30; média C=70.00; média F=70.00
+
+2. COCHRAN Q — COMPILAÇÃO ENTRE LLMs
+----------------------------------------------------------------
+Todas: Q(2)=3.0000; p=0.22313016; NAO_SIGNIFICATIVO.
+Facil: não aplicável (NA_SEM_DISCORDANCIA).
+Medio: não aplicável (NA_SEM_DISCORDANCIA).
+Dificil: Q(2)=3.0000; p=0.22313016; NAO_SIGNIFICATIVO.
+
+3. FRIEDMAN — F ENTRE LLMs
+----------------------------------------------------------------
+Todas: chi2(2)=3.5000; p=0.17377394; NAO_SIGNIFICATIVO.
+Facil: não aplicável (NA_GRUPOS_IDENTICOS).
+Medio: chi2(2)=4.0000; p=0.13533528; NAO_SIGNIFICATIVO.
+Dificil: chi2(2)=3.0000; p=0.22313016; NAO_SIGNIFICATIVO.
+
+4. KRUSKAL–WALLIS — DIFICULDADE DENTRO DE CADA MODELO
+----------------------------------------------------------------
+GPT-5.6-Sol: Fácil=100.00; Médio=100.00; Difícil=30.00; H(2)=17.6522; p=0.00014685; SIGNIFICATIVO.
+DeepSeek-V4-Pro: Fácil=100.00; Médio=93.00; Difícil=20.00; H(2)=17.6353; p=0.00014809; SIGNIFICATIVO.
+Claude-Sonnet-5: Fácil=100.00; Médio=100.00; Difícil=10.00; H(2)=24.8571; p=0.00000400; SIGNIFICATIVO.
+
+5. PÓS-TESTES MANN–WHITNEY + HOLM
+----------------------------------------------------------------
+GPT-5.6-Sol — Facil x Medio: NA (grupos idênticos).
+GPT-5.6-Sol — Facil x Dificil: U=85.0; p=0.00161677; p_Holm=0.00323355; SIGNIFICATIVO.
+GPT-5.6-Sol — Medio x Dificil: U=85.0; p=0.00161677; p_Holm=0.00323355; SIGNIFICATIVO.
+DeepSeek-V4-Pro — Facil x Medio: U=60.0; p=0.16807832; p_Holm=0.16807832; NAO_SIGNIFICATIVO.
+DeepSeek-V4-Pro — Facil x Dificil: U=90.0; p=0.00044052; p_Holm=0.00132156; SIGNIFICATIVO.
+DeepSeek-V4-Pro — Medio x Dificil: U=88.0; p=0.00166480; p_Holm=0.00332959; SIGNIFICATIVO.
+Claude-Sonnet-5 — Facil x Medio: NA (grupos idênticos).
+Claude-Sonnet-5 — Facil x Dificil: U=95.0; p=0.00009661; p_Holm=0.00019321; SIGNIFICATIVO.
+Claude-Sonnet-5 — Medio x Dificil: U=95.0; p=0.00009661; p_Holm=0.00019321; SIGNIFICATIVO.
+
+6. TAMANHO DE EFEITO — RANK-BISERIAL
+----------------------------------------------------------------
+GPT-5.6-Sol — Facil x Medio: NA.
+GPT-5.6-Sol — Facil x Dificil: r_rb=0.7000; magnitude=grande; direção=Facil > Dificil.
+GPT-5.6-Sol — Medio x Dificil: r_rb=0.7000; magnitude=grande; direção=Medio > Dificil.
+DeepSeek-V4-Pro — Facil x Medio: r_rb=0.2000; magnitude=pequeno; direção=Facil > Medio.
+DeepSeek-V4-Pro — Facil x Dificil: r_rb=0.8000; magnitude=grande; direção=Facil > Dificil.
+DeepSeek-V4-Pro — Medio x Dificil: r_rb=0.7600; magnitude=grande; direção=Medio > Dificil.
+Claude-Sonnet-5 — Facil x Medio: NA.
+Claude-Sonnet-5 — Facil x Dificil: r_rb=0.9000; magnitude=grande; direção=Facil > Dificil.
+Claude-Sonnet-5 — Medio x Dificil: r_rb=0.9000; magnitude=grande; direção=Medio > Dificil.
+
+7. INTERPRETAÇÃO SINTÉTICA
+----------------------------------------------------------------
+A compilabilidade não apresentou diferença estatisticamente significativa entre as três LLMs no conjunto das 30 tarefas.
+A correção funcional F também não apresentou diferença global estatisticamente significativa entre as três LLMs quando as mesmas tarefas foram comparadas de forma pareada.
+A dificuldade apresentou associação estatisticamente significativa com a redução de F em cada uma das três LLMs, com a queda concentrada no nível Difícil.
+Os contrastes Fácil x Difícil e Médio x Difícil foram significativos após Holm nos três modelos. Fácil x Médio não foi significativo no DeepSeek e foi não aplicável no GPT e Claude por grupos idênticos.
+
+OBSERVAÇÃO METODOLÓGICA
+----------------------------------------------------------------
+Os testes entre LLMs preservam o pareamento por tarefa. Para comparar níveis de dificuldade dentro de cada modelo foi usado Kruskal–Wallis, pois Fácil, Médio e Difícil são conjuntos distintos de tarefas, não medições repetidas da mesma tarefa.
+Ausência de significância estatística não deve ser interpretada como prova de equivalência entre modelos.

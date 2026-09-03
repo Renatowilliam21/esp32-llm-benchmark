@@ -1,0 +1,97 @@
+﻿arduino-cli.exe : In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real\T26-LLM02-real.ino:191:
+No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T26_real.ps1:291 caractere:14
++     $saida = & arduino-cli compile `
++              ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...2-real.ino:191::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc: In function 'void gravarRegistroPendente()':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:2:9: error: 'contadorAmostras' was not declared in this scope
+    2 |     if (contadorAmostras == 0) return;
+      |         ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:8:13: error: 'struct RegistroMeteorologico' has no member named 'timestamp'
+    8 |         reg.timestamp = rtc.now().unixtime();
+      |             ^~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:10:13: error: 'struct RegistroMeteorologico' has no member named 'timestamp'
+   10 |         reg.timestamp = 0;
+      |             ^~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:14:9: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   14 |     reg.temperatura = somaTemperatura / contadorAmostras;
+      |         ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:14:23: error: 'somaTemperatura' was not declared in this scope
+   14 |     reg.temperatura = somaTemperatura / contadorAmostras;
+      |                       ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:14:41: error: 'contadorAmostras' was not declared in this scope
+   14 |     reg.temperatura = somaTemperatura / contadorAmostras;
+      |                                         ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:15:9: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   15 |     reg.umidade = somaUmidade / contadorAmostras;
+      |         ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:15:19: error: 'somaUmidade' was not declared in this scope
+   15 |     reg.umidade = somaUmidade / contadorAmostras;
+      |                   ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:16:19: error: 'somaPressao' was not declared in this scope; did you mean 'acPressao'?
+   16 |     reg.pressao = somaPressao / contadorAmostras;
+      |                   ^~~~~~~~~~~
+      |                   acPressao
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:19:9: error: 'struct RegistroMeteorologico' has no member named 'itgu'
+   19 |     reg.itgu = calcularITGU(reg.temperatura, reg.umidade, reg.pressao);
+      |         ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:19:33: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   19 |     reg.itgu = calcularITGU(reg.temperatura, reg.umidade, reg.pressao);
+      |                                 ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:19:50: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   19 |     reg.itgu = calcularITGU(reg.temperatura, reg.umidade, reg.pressao);
+      |                                                  ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:20:9: error: 'struct RegistroMeteorologico' has no member named 'itu'
+   20 |     reg.itu = calcularITU(reg.temperatura, reg.umidade);
+      |         ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:20:31: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   20 |     reg.itu = calcularITU(reg.temperatura, reg.umidade);
+      |                               ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:20:48: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   20 |     reg.itu = calcularITU(reg.temperatura, reg.umidade);
+      |                                                ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:21:47: error: 'struct RegistroMeteorologico' has no member named 'temperatura'
+   21 |     reg.indiceCalor = calcularIndiceCalor(reg.temperatura, reg.umidade);
+      |                                               ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:21:64: error: 'struct RegistroMeteorologico' has no member named 'umidade'
+   21 |     reg.indiceCalor = calcularIndiceCalor(reg.temperatura, reg.umidade);
+      |                                                                ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:26:24: error: 'pulsosChuva' was not declared in this scope; did you mean 'pulsosChuvaLocal'?
+   26 |     pulsosChuvaLocal = pulsosChuva;
+      |                        ^~~~~~~~~~~
+      |                        pulsosChuvaLocal
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:27:24: error: 'pulsosVento' was not declared in this scope; did you mean 'pulsosVentoLocal'?
+   27 |     pulsosVentoLocal = pulsosVento;
+      |                        ^~~~~~~~~~~
+      |                        pulsosVentoLocal
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:33:9: error: 'struct RegistroMeteorologico' has no member named 'chuva'; did you mean 'chuvaMm'?
+   33 |     reg.chuva = (float)pulsosChuvaLocal * MM_POR_PULSO_CHUVA;
+      |         ^~~~~
+      |         chuvaMm
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:34:9: error: 'struct RegistroMeteorologico' has no member named 'velocidadeVento'
+   34 |     reg.velocidadeVento = (float)pulsosVentoLocal * KMH_POR_PULSO_VENTO;
+      |         ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:34:53: error: 'KMH_POR_PULSO_VENTO' was not declared in this scope
+   34 |     reg.velocidadeVento = (float)pulsosVentoLocal * KMH_POR_PULSO_VENTO;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real/candidato.inc:44:24: error: cannot convert 'RegistroMeteorologico' to 'int'
+   44 |         gravarRegistro(reg);
+      |                        ^~~
+      |                        |
+      |                        RegistroMeteorologico
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T26-LLM02-real\T26-LLM02-real.ino:177:9: note:   initializing argument 1 of 'void gravarRegistro(int, RegistroMeteorologico)'
+  177 |     int indice,
+      |     ~~~~^~~~~~
+Error during build: exit status 1
+
+[92mUsed library[0m   [92mVersion[0m [90mPath[0m
+[93mRTClib[0m         2.1.4   [90mC:\Users\renat\Documents\Arduino\libraries\RTClib[0m
+[93mAdafruit BusIO[0m 1.17.4  [90mC:\Users\renat\Documents\Arduino\libraries\Adafruit_BusIO[0m
+[93mWire[0m           3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8\libraries\Wire[0m
+[93mSPI[0m            3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8\libraries\SPI[0m
+
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+

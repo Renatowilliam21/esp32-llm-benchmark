@@ -1,0 +1,10 @@
+﻿modelo_id,modelo,nivel,tarefas,compilacoes_ok,funcionais_100,media_C,media_F,mediana_C,mediana_F
+LLM01,GPT-5.6-Sol,Facil,10,10,10,100.0,100.0,100.0,100.0
+LLM01,GPT-5.6-Sol,Medio,10,10,10,100.0,100.0,100.0,100.0
+LLM01,GPT-5.6-Sol,Dificil,10,3,3,30.0,30.0,0.0,0.0
+LLM02,DeepSeek-V4-Pro,Facil,10,10,10,100.0,100.0,100.0,100.0
+LLM02,DeepSeek-V4-Pro,Medio,10,10,8,100.0,93.0,100.0,100.0
+LLM02,DeepSeek-V4-Pro,Dificil,10,2,2,20.0,20.0,0.0,0.0
+LLM03,Claude-Sonnet-5,Facil,10,10,10,100.0,100.0,100.0,100.0
+LLM03,Claude-Sonnet-5,Medio,10,10,10,100.0,100.0,100.0,100.0
+LLM03,Claude-Sonnet-5,Dificil,10,1,1,10.0,10.0,0.0,0.0

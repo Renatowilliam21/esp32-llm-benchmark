@@ -1,0 +1,15 @@
+﻿arduino-cli.exe : C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM03-real\T27-LLM03-real.ino:2:10: fatal error: ArduinoJson.h: No such file or directory
+No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T27_real.ps1:187 caractere:14
++     $saida = & arduino-cli compile `
++              ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\renat\...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    2 | #include <ArduinoJson.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+Error during build: exit status 1
+
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+

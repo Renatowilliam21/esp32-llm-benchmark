@@ -1,0 +1,111 @@
+﻿arduino-cli.exe : In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:148:
+No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T25_real.ps1:268 caractere:14
++     $saida = & arduino-cli compile `
++              ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...1-real.ino:148::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc: In function 'void coletarAmostra()':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:5:20: error: too few arguments to function 'void lerAmbiente(float&, float&, float, float)'
+    5 |     if (lerAmbiente(temperaturaAmbiente, umidade)) {
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:108:6: note: declared here
+  108 | void lerAmbiente(
+      |      ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:7:33: error: too few arguments to function 'bool passaTesteDegrau(float, float&)'
+    7 |             if (passaTesteDegrau(temperaturaAmbiente)) {
+      |                 ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:90:6: note: declared here
+   90 | bool passaTesteDegrau(
+      |      ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:8:17: error: 'acumuladorTemperaturaAmbiente' was not declared in this scope
+    8 |                 acumuladorTemperaturaAmbiente += temperaturaAmbiente;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:11:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   11 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:15:13: error: 'acumuladorUmidade' was not declared in this scope
+   15 |             acumuladorUmidade += umidade;
+      |             ^~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:17:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   17 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:25:27: error: too many arguments to function 'void lerPressaoAltitude(float&, float&)'
+   25 |     if (lerPressaoAltitude(temperaturaPressao, pressao, altitude)) {
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:118:6: note: declared here
+  118 | void lerPressaoAltitude(
+      |      ^~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:25:27: error: could not convert 'lerPressaoAltitude(temperaturaPressao, pressao)' from 'void' to 
+'bool'
+   25 |     if (lerPressaoAltitude(temperaturaPressao, pressao, altitude)) {
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                           |
+      |                           void
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:27:33: error: too few arguments to function 'bool passaTesteDegrau(float, float&)'
+   27 |             if (passaTesteDegrau(temperaturaPressao)) {
+      |                 ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:90:6: note: declared here
+   90 | bool passaTesteDegrau(
+      |      ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:28:17: error: 'acumuladorTemperaturaPressao' was not declared in this scope
+   28 |                 acumuladorTemperaturaPressao += temperaturaPressao;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:31:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   31 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:35:13: error: 'acumuladorPressao' was not declared in this scope
+   35 |             acumuladorPressao += pressao;
+      |             ^~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:37:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   37 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:41:13: error: 'acumuladorAltitude' was not declared in this scope
+   41 |             acumuladorAltitude += altitude;
+      |             ^~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:43:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   43 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:48:14: error: too many arguments to function 'float lerUV()'
+   48 |     if (lerUV(uv)) {
+      |         ~~~~~^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:136:7: note: declared here
+  136 | float lerUV() {
+      |       ^~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:50:13: error: 'acumuladorUV' was not declared in this scope; did you mean 'Acumulador'?
+   50 |             acumuladorUV += uv;
+      |             ^~~~~~~~~~~~
+      |             Acumulador
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:52:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   52 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:57:15: error: too many arguments to function 'float lerLDR()'
+   57 |     if (lerLDR(ldr)) {
+      |         ~~~~~~^~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:140:7: note: declared here
+  140 | float lerLDR() {
+      |       ^~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:59:13: error: 'acumuladorLDR' was not declared in this scope; did you mean 'Acumulador'?
+   59 |             acumuladorLDR += ldr;
+      |             ^~~~~~~~~~~~~
+      |             Acumulador
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:61:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   61 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:66:23: error: too few arguments to function 'void lerQualidadeAr(float&, float&, float&)'
+   66 |     if (lerQualidadeAr(qualidadeAr)) {
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real\T25-LLM01-real.ino:126:6: note: declared here
+  126 | void lerQualidadeAr(
+      |      ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:68:13: error: 'acumuladorQualidadeAr' was not declared in this scope
+   68 |             acumuladorQualidadeAr += qualidadeAr;
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM01-real/candidato.inc:70:13: error: 'contadorDescartesFaixa' was not declared in this scope
+   70 |             contadorDescartesFaixa++;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+
+Error during build: exit status 1
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+

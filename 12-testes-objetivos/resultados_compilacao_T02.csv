@@ -1,0 +1,4 @@
+﻿"tarefa","modelo_id","modelo","compilou","C_0_100","flash_bytes","flash_percentual","ram_bytes","ram_percentual","fqbn","esp32_core","arduino_cli"
+"T02","LLM01","GPT-5.6-Sol","1","100","281320","21","22092","6","esp32:esp32:esp32","3.3.8","1.5.1"
+"T02","LLM02","DeepSeek-V4-Pro","1","100","281572","21","22092","6","esp32:esp32:esp32","3.3.8","1.5.1"
+"T02","LLM03","Claude-Sonnet-5","1","100","281320","21","22092","6","esp32:esp32:esp32","3.3.8","1.5.1"

@@ -1,0 +1,4 @@
+﻿"tarefa","modelo_id","modelo","execucao_ok","casos_aprovados","casos_executados","F_0_100","resultado"
+"T05","LLM01","GPT-5.6-Sol","1","5","5","100","PASS"
+"T05","LLM02","DeepSeek-V4-Pro","1","5","5","100","PASS"
+"T05","LLM03","Claude-Sonnet-5","1","5","5","100","PASS"

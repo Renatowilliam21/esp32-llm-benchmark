@@ -1,0 +1,15 @@
+﻿arduino-cli.exe : C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM02-real\T25-LLM02-real.ino: In function 'void setup()':
+No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T25_real.ps1:268 caractere:14
++     $saida = & arduino-cli compile `
++              ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\renat\...'void setup()'::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM02-real\T25-LLM02-real.ino:158:5: error: 'coletarAmostra' was not declared in this scope
+  158 |     coletarAmostra();
+      |     ^~~~~~~~~~~~~~
+Error during build: exit status 1
+
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+

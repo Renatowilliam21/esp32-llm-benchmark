@@ -1,0 +1,143 @@
+﻿arduino-cli.exe : In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real\T25-LLM03-real.ino:148:
+No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T25_real.ps1:268 caractere:14
++     $saida = & arduino-cli compile `
++              ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...3-real.ino:148::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc: In function 'void coletarAmostra()':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:3:20: error: too few arguments to function 'void lerAmbiente(float&, float&, float, float)'
+    3 |     if (lerAmbiente(temperatura, umidade)) {
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real\T25-LLM03-real.ino:108:6: note: declared here
+  108 | void lerAmbiente(
+      |      ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:4:38: error: 'TipoSensor' has not been declared
+    4 |         if (faixaValida(temperatura, TipoSensor::TEMPERATURA)) {
+      |                                      ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:5:33: error: too few arguments to function 'bool passaTesteDegrau(float, float&)'
+    5 |             if (passaTesteDegrau(temperatura)) {
+      |                 ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real\T25-LLM03-real.ino:90:6: note: declared here
+   90 | bool passaTesteDegrau(
+      |      ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:6:17: error: 'somaTemperatura' was not declared in this scope; did you mean 'temperatura'?
+    6 |                 somaTemperatura += temperatura;
+      |                 ^~~~~~~~~~~~~~~
+      |                 temperatura
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:7:17: error: 'contagemTemperatura' was not declared in this scope
+    7 |                 contagemTemperatura++;
+      |                 ^~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:9:17: error: 'descarteTemperatura' was not declared in this scope
+    9 |                 descarteTemperatura++;
+      |                 ^~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:12:13: error: 'descarteTemperatura' was not declared in this scope
+   12 |             descarteTemperatura++;
+      |             ^~~~~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:15:34: error: 'TipoSensor' has not been declared
+   15 |         if (faixaValida(umidade, TipoSensor::UMIDADE)) {
+      |                                  ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:16:13: error: 'somaUmidade' was not declared in this scope
+   16 |             somaUmidade += umidade;
+      |             ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:17:13: error: 'contagemUmidade' was not declared in this scope
+   17 |             contagemUmidade++;
+      |             ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:19:13: error: 'descarteUmidade' was not declared in this scope
+   19 |             descarteUmidade++;
+      |             ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:24:27: error: could not convert 'lerPressaoAltitude(pressao, altitude)' from 'void' to 'bool'
+   24 |     if (lerPressaoAltitude(pressao, altitude)) {
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+      |                           |
+      |                           void
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:25:34: error: 'TipoSensor' has not been declared
+   25 |         if (faixaValida(pressao, TipoSensor::PRESSAO)) {
+      |                                  ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:26:13: error: 'somaPressao' was not declared in this scope; did you mean 'acPressao'?
+   26 |             somaPressao += pressao;
+      |             ^~~~~~~~~~~
+      |             acPressao
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:27:13: error: 'contagemPressao' was not declared in this scope
+   27 |             contagemPressao++;
+      |             ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:29:13: error: 'descartePressao' was not declared in this scope
+   29 |             descartePressao++;
+      |             ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:32:35: error: 'TipoSensor' has not been declared
+   32 |         if (faixaValida(altitude, TipoSensor::ALTITUDE)) {
+      |                                   ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:33:13: error: 'somaAltitude' was not declared in this scope; did you mean 'altitude'?
+   33 |             somaAltitude += altitude;
+      |             ^~~~~~~~~~~~
+      |             altitude
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:34:13: error: 'contagemAltitude' was not declared in this scope
+   34 |             contagemAltitude++;
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:36:13: error: 'descarteAltitude' was not declared in this scope
+   36 |             descarteAltitude++;
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:41:14: error: too many arguments to function 'float lerUV()'
+   41 |     if (lerUV(uv)) {
+      |         ~~~~~^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real\T25-LLM03-real.ino:136:7: note: declared here
+  136 | float lerUV() {
+      |       ^~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:42:29: error: 'TipoSensor' has not been declared
+   42 |         if (faixaValida(uv, TipoSensor::UV)) {
+      |                             ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:43:13: error: 'somaUV' was not declared in this scope
+   43 |             somaUV += uv;
+      |             ^~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:44:13: error: 'contagemUV' was not declared in this scope
+   44 |             contagemUV++;
+      |             ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:46:13: error: 'descarteUV' was not declared in this scope
+   46 |             descarteUV++;
+      |             ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:51:15: error: too many arguments to function 'float lerLDR()'
+   51 |     if (lerLDR(ldr)) {
+      |         ~~~~~~^~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real\T25-LLM03-real.ino:140:7: note: declared here
+  140 | float lerLDR() {
+      |       ^~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:52:30: error: 'TipoSensor' has not been declared
+   52 |         if (faixaValida(ldr, TipoSensor::LDR)) {
+      |                              ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:53:13: error: 'somaLDR' was not declared in this scope
+   53 |             somaLDR += ldr;
+      |             ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:54:13: error: 'contagemLDR' was not declared in this scope
+   54 |             contagemLDR++;
+      |             ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:56:13: error: 'descarteLDR' was not declared in this scope
+   56 |             descarteLDR++;
+      |             ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:61:23: error: too few arguments to function 'void lerQualidadeAr(float&, float&, float&)'
+   61 |     if (lerQualidadeAr(qualidadeAr)) {
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real\T25-LLM03-real.ino:126:6: note: declared here
+  126 | void lerQualidadeAr(
+      |      ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:62:38: error: 'TipoSensor' has not been declared
+   62 |         if (faixaValida(qualidadeAr, TipoSensor::QUALIDADE_AR)) {
+      |                                      ^~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:63:13: error: 'somaQualidadeAr' was not declared in this scope; did you mean 'lerQualidadeAr'?
+   63 |             somaQualidadeAr += qualidadeAr;
+      |             ^~~~~~~~~~~~~~~
+      |             lerQualidadeAr
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:64:13: error: 'contagemQualidadeAr' was not declared in this scope; did you mean 
+'lerQualidadeAr'?
+   64 |             contagemQualidadeAr++;
+      |             ^~~~~~~~~~~~~~~~~~~
+      |             lerQualidadeAr
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T25-LLM03-real/candidato.inc:66:13: error: 'descarteQualidadeAr' was not declared in this scope; did you mean 
+'lerQualidadeAr'?
+   66 |             descarteQualidadeAr++;
+      |             ^~~~~~~~~~~~~~~~~~~
+      |             lerQualidadeAr
+Error during build: exit status 1
+
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+

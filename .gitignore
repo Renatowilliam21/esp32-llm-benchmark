@@ -25,3 +25,9 @@ Thumbs.db
 # Arquivos temporários
 *.tmp
 *.log
+
+# Backups locais
+*.bak
+
+# Diretórios temporários dos testes objetivos
+12-testes-objetivos/temp_*/

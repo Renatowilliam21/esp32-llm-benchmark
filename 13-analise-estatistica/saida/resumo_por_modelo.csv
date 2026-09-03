@@ -1,0 +1,4 @@
+﻿modelo_id,modelo,tarefas,compilacoes_ok,funcionais_100,media_C,media_F,mediana_C,mediana_F
+LLM01,GPT-5.6-Sol,30,23,23,76.66666666666667,76.66666666666667,100.0,100.0
+LLM02,DeepSeek-V4-Pro,30,22,20,73.33333333333333,71.0,100.0,100.0
+LLM03,Claude-Sonnet-5,30,21,21,70.0,70.0,100.0,100.0
