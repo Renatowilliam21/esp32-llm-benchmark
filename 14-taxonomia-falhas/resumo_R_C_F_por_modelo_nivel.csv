@@ -1,0 +1,10 @@
+modelo,nivel,R_0_100,C_0_100,F_0_100,diferenca_R_F
+Claude-Sonnet-5,Dificil,90.0,10.0,10.0,80.0
+Claude-Sonnet-5,Facil,100.0,100.0,100.0,0.0
+Claude-Sonnet-5,Medio,98.5,100.0,100.0,-1.5
+DeepSeek-V4-Pro,Dificil,50.5,20.0,20.0,30.5
+DeepSeek-V4-Pro,Facil,99.5,100.0,100.0,-0.5
+DeepSeek-V4-Pro,Medio,100.0,100.0,93.0,7.0
+GPT-5.6-Sol,Dificil,96.5,30.0,30.0,66.5
+GPT-5.6-Sol,Facil,100.0,100.0,100.0,0.0
+GPT-5.6-Sol,Medio,100.0,100.0,100.0,0.0

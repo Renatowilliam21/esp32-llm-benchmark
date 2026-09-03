@@ -1,0 +1,31 @@
+﻿tarefa,modelo_id,modelo,status_objetivo,categoria_principal,categoria_secundaria,descricao
+T21,LLM01,GPT-5.6-Sol,PASS,PASS,,Compilou e passou 4/4 casos
+T21,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E3,E1,Incompatibilidade contextual com identificadores do firmware e uso incompatível da API do watchdog
+T21,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E1,,Uso incompatível da API esp_task_wdt_init no core ESP32 3.3.8
+T22,LLM01,GPT-5.6-Sol,PASS,PASS,,Compilou e passou 5/5 casos
+T22,LLM02,DeepSeek-V4-Pro,PASS,PASS,,Compilou e passou 5/5 casos
+T22,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Redefinição de função já existente no contexto de integração
+T23,LLM01,GPT-5.6-Sol,COMPILE_FAIL,E1,,Uso incompatível da API ScioSense_ENS160
+T23,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E2,,Implementação de inicializarSensores ausente ou não disponível para ligação
+T23,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Referências a identificadores incompatíveis com o contexto do firmware
+T24,LLM01,GPT-5.6-Sol,COMPILE_FAIL,INDETERMINADO,,Causa não atribuída devido à divergência de proveniência dos artefatos de validação
+T24,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,INDETERMINADO,,Causa não atribuída devido à divergência de proveniência dos artefatos de validação
+T24,LLM03,Claude-Sonnet-5,COMPILE_FAIL,INDETERMINADO,,Causa não atribuída devido à divergência de proveniência dos artefatos de validação
+T25,LLM01,GPT-5.6-Sol,COMPILE_FAIL,E3,,Incompatibilidades de assinaturas e estado global do firmware
+T25,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E2,,Função coletarAmostra não disponível no contexto compilado
+T25,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Incompatibilidades de assinaturas tipos e identificadores do firmware
+T26,LLM01,GPT-5.6-Sol,COMPILE_FAIL,E3,,Campos estruturas acumuladores e contratos incompatíveis com o firmware
+T26,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E3,,Campos estruturas estado e contrato de gravação incompatíveis
+T26,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Campos constantes acumuladores e contrato de gravação incompatíveis
+T27,LLM01,GPT-5.6-Sol,COMPILE_FAIL,E3,,Campos de RegistroMeteorologico incompatíveis com a estrutura existente
+T27,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E3,,Campos de RegistroMeteorologico incompatíveis com a estrutura existente
+T27,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Campos de RegistroMeteorologico incompatíveis com a estrutura existente
+T28,LLM01,GPT-5.6-Sol,PASS,PASS,,Compilou e passou 6/6 casos
+T28,LLM02,DeepSeek-V4-Pro,PASS,PASS,,Compilou e passou 6/6 casos
+T28,LLM03,Claude-Sonnet-5,PASS,PASS,,Compilou e passou 6/6 casos
+T29,LLM01,GPT-5.6-Sol,COMPILE_FAIL,E3,,Tipos variáveis URLs e estado da fila incompatíveis com o firmware
+T29,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E2,,Implementação de tentarDrenarFila ausente ou não disponível para ligação
+T29,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Tipos campos e assinatura de enviarParaUmServidor incompatíveis
+T30,LLM01,GPT-5.6-Sol,COMPILE_FAIL,E3,,Objetos server e preferences incompatíveis ou inexistentes no contexto
+T30,LLM02,DeepSeek-V4-Pro,COMPILE_FAIL,E3,,Objetos server e preferences incompatíveis ou inexistentes no contexto
+T30,LLM03,Claude-Sonnet-5,COMPILE_FAIL,E3,,Referências a server preferences contadores e sensores incompatíveis com o contexto

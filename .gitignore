@@ -31,3 +31,5 @@ Thumbs.db
 
 # Diretórios temporários dos testes objetivos
 12-testes-objetivos/temp_*/
+
+*_backup.ps1

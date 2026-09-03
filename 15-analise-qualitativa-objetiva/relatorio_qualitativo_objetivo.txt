@@ -1,0 +1,34 @@
+ESP32-LLM BENCHMARK
+ANÁLISE QUALITATIVA X OBJETIVA
+============================================================
+
+N total: 90
+
+DISTRIBUIÇÃO DOS STATUS
+PASS: 64
+COMPILE_FAIL: 24
+FAIL: 2
+
+CORRELAÇÃO R x F
+Global: rho=0.657870; p=1.85713e-12; N=90
+Fácil: correlação não estimável, pois F é constante.
+Médio: rho=-0.049600; p=0.794644
+Difícil: rho=0.292472; p=0.116791
+
+DIVERGÊNCIAS DESCRITIVAS
+Casos com R >= 80 e F < 100: 18
+Desses, COMPILE_FAIL: 16
+Desses, FAIL funcional: 2
+
+Observação: R >= 80 foi empregado apenas como corte descritivo para localizar divergências e não como métrica primária do benchmark.
+
+MÉDIAS R/C/F POR MODELO E NÍVEL
+Claude-Sonnet-5 | Facil | R=100.00 | C=100.00 | F=100.00 | R-F=0.00
+Claude-Sonnet-5 | Medio | R=98.50 | C=100.00 | F=100.00 | R-F=-1.50
+Claude-Sonnet-5 | Dificil | R=90.00 | C=10.00 | F=10.00 | R-F=80.00
+DeepSeek-V4-Pro | Facil | R=99.50 | C=100.00 | F=100.00 | R-F=-0.50
+DeepSeek-V4-Pro | Medio | R=100.00 | C=100.00 | F=93.00 | R-F=7.00
+DeepSeek-V4-Pro | Dificil | R=50.50 | C=20.00 | F=20.00 | R-F=30.50
+GPT-5.6-Sol | Facil | R=100.00 | C=100.00 | F=100.00 | R-F=0.00
+GPT-5.6-Sol | Medio | R=100.00 | C=100.00 | F=100.00 | R-F=0.00
+GPT-5.6-Sol | Dificil | R=96.50 | C=30.00 | F=30.00 | R-F=66.50

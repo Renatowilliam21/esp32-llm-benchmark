@@ -1,0 +1,33 @@
+In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real\T21-LLM02-real.ino:22:
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc: In function 'void setup()':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc:8:11: error: 'PLUVIOMETER_PIN' was not declared in this scope
+    8 |   pinMode(PLUVIOMETER_PIN, INPUT_PULLUP);
+      |           ^~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc:9:11: error: 'ANEMOMETER_PIN' was not declared in this scope
+    9 |   pinMode(ANEMOMETER_PIN, INPUT_PULLUP);
+      |           ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc:10:59: error: 'pluviometerISR' was not declared in this scope
+   10 |   attachInterrupt(digitalPinToInterrupt(PLUVIOMETER_PIN), pluviometerISR, FALLING);
+      |                                                           ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc:11:58: error: 'anemometerISR' was not declared in this scope
+   11 |   attachInterrupt(digitalPinToInterrupt(ANEMOMETER_PIN), anemometerISR, FALLING);
+      |                                                          ^~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc:13:21: error: invalid conversion from 'int' to 'const esp_task_wdt_config_t*' [-fpermissive]
+   13 |   esp_task_wdt_init(10, true);
+      |                     ^~
+      |                     |
+      |                     int
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real/candidato.inc:13:20: error: too many arguments to function 'esp_err_t esp_task_wdt_init(const esp_task_wdt_config_t*)'
+   13 |   esp_task_wdt_init(10, true);
+      |   ~~~~~~~~~~~~~~~~~^~~~~~~~~~
+In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T21-LLM02-real\T21-LLM02-real.ino:3:
+C:\Users\renat\AppData\Local\Arduino15\packages\esp32\tools\esp32-libs\3.3.8/include/esp_system/include/esp_task_wdt.h:47:11: note: declared here
+   47 | esp_err_t esp_task_wdt_init(const esp_task_wdt_config_t *config);
+      |           ^~~~~~~~~~~~~~~~~
+
+[92mUsed library[0m [92mVersion[0m [90mPath[0m
+[93mWire[0m         3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8\libraries\Wire[0m
+
+[92mUsed platform[0m [92mVersion[0m [90mPath[0m
+[93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
+Error during build: exit status 1

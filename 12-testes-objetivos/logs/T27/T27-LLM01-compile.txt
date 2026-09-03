@@ -1,15 +1,46 @@
-﻿arduino-cli.exe : C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real\T27-LLM01-real.ino:2:10: fatal error: ArduinoJson.h: No such file or directory
+﻿arduino-cli.exe : In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real\T27-LLM01-real.ino:58:
 No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T27_real.ps1:187 caractere:14
 +     $saida = & arduino-cli compile `
 +              ~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (C:\Users\renat\...le or directory:String) [], RemoteException
+    + CategoryInfo          : NotSpecified: (In file include...01-real.ino:58::String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
  
-    2 | #include <ArduinoJson.h>
-      |          ^~~~~~~~~~~~~~~
-compilation terminated.
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc: In function 'String montarJSON(const RegistroMeteorologico&)':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:6:18: error: 'const struct RegistroMeteorologico' has no member named 'temperatura'
+    6 |     if (!isnan(r.temperatura)) doc["temperatura"] = r.temperatura;
+      |                  ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:6:55: error: 'const struct RegistroMeteorologico' has no member named 'temperatura'
+    6 |     if (!isnan(r.temperatura)) doc["temperatura"] = r.temperatura;
+      |                                                       ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:7:18: error: 'const struct RegistroMeteorologico' has no member named 'umidade'
+    7 |     if (!isnan(r.umidade)) doc["umidade"] = r.umidade;
+      |                  ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:7:47: error: 'const struct RegistroMeteorologico' has no member named 'umidade'
+    7 |     if (!isnan(r.umidade)) doc["umidade"] = r.umidade;
+      |                                               ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:11:18: error: 'const struct RegistroMeteorologico' has no member named 'itgu'
+   11 |     if (!isnan(r.itgu)) {
+      |                  ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:12:25: error: 'const struct RegistroMeteorologico' has no member named 'itgu'
+   12 |         doc["itgu"] = r.itgu;
+      |                         ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:13:51: error: 'const struct RegistroMeteorologico' has no member named 'itgu'
+   13 |         doc["classificacao_itgu"] = classificar(r.itgu);
+      |                                                   ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:16:18: error: 'const struct RegistroMeteorologico' has no member named 'itu'
+   16 |     if (!isnan(r.itu)) {
+      |                  ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:17:24: error: 'const struct RegistroMeteorologico' has no member named 'itu'
+   17 |         doc["itu"] = r.itu;
+      |                        ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM01-real/candidato.inc:18:50: error: 'const struct RegistroMeteorologico' has no member named 'itu'
+   18 |         doc["classificacao_itu"] = classificar(r.itu);
+      |                                                  ^~~
+Error during build: exit status 1
+
+[92mUsed library[0m [92mVersion[0m [90mPath[0m
+[93mArduinoJson[0m  6.21.6  [90mC:\Users\renat\Documents\Arduino\libraries\ArduinoJson[0m
 
 [92mUsed platform[0m [92mVersion[0m [90mPath[0m
 [93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
-Error during build: exit status 1
 

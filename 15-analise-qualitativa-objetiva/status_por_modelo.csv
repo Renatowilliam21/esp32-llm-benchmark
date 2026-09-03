@@ -1,0 +1,8 @@
+modelo,status,quantidade
+Claude-Sonnet-5,COMPILE_FAIL,9
+Claude-Sonnet-5,PASS,21
+DeepSeek-V4-Pro,COMPILE_FAIL,8
+DeepSeek-V4-Pro,FAIL,2
+DeepSeek-V4-Pro,PASS,20
+GPT-5.6-Sol,COMPILE_FAIL,7
+GPT-5.6-Sol,PASS,23

@@ -1,14 +1,100 @@
-﻿arduino-cli.exe : C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real\T27-LLM02-real.ino:2:10: fatal error: ArduinoJson.h: No such file or directory
+﻿arduino-cli.exe : In file included from C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real\T27-LLM02-real.ino:58:
 No C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\scripts\compilar_T27_real.ps1:187 caractere:14
 +     $saida = & arduino-cli compile `
 +              ~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (C:\Users\renat\...le or directory:String) [], RemoteException
+    + CategoryInfo          : NotSpecified: (In file include...02-real.ino:58::String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
  
-    2 | #include <ArduinoJson.h>
-      |          ^~~~~~~~~~~~~~~
-compilation terminated.
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc: In function 'String montarJSON(const RegistroMeteorologico&)':
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:9:16: error: 'const struct RegistroMeteorologico' has no member named 'temperatura'
+    9 |   if (!isnan(r.temperatura)) doc["temperatura"] = r.temperatura;
+      |                ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:9:53: error: 'const struct RegistroMeteorologico' has no member named 'temperatura'
+    9 |   if (!isnan(r.temperatura)) doc["temperatura"] = r.temperatura;
+      |                                                     ^~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:10:16: error: 'const struct RegistroMeteorologico' has no member named 'umidade'
+   10 |   if (!isnan(r.umidade)) doc["umidade"] = r.umidade;
+      |                ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:10:45: error: 'const struct RegistroMeteorologico' has no member named 'umidade'
+   10 |   if (!isnan(r.umidade)) doc["umidade"] = r.umidade;
+      |                                             ^~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:13:16: error: 'const struct RegistroMeteorologico' has no member named 'velocidade_vento'
+   13 |   if (!isnan(r.velocidade_vento)) doc["velocidade_vento"] = r.velocidade_vento;
+      |                ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:13:63: error: 'const struct RegistroMeteorologico' has no member named 'velocidade_vento'
+   13 |   if (!isnan(r.velocidade_vento)) doc["velocidade_vento"] = r.velocidade_vento;
+      |                                                               ^~~~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:14:16: error: 'const struct RegistroMeteorologico' has no member named 'direcao_vento'
+   14 |   if (!isnan(r.direcao_vento)) doc["direcao_vento"] = r.direcao_vento;
+      |                ^~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:14:57: error: 'const struct RegistroMeteorologico' has no member named 'direcao_vento'
+   14 |   if (!isnan(r.direcao_vento)) doc["direcao_vento"] = r.direcao_vento;
+      |                                                         ^~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:15:16: error: 'const struct RegistroMeteorologico' has no member named 'rajada_vento'
+   15 |   if (!isnan(r.rajada_vento)) doc["rajada_vento"] = r.rajada_vento;
+      |                ^~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:15:55: error: 'const struct RegistroMeteorologico' has no member named 'rajada_vento'
+   15 |   if (!isnan(r.rajada_vento)) doc["rajada_vento"] = r.rajada_vento;
+      |                                                       ^~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:16:16: error: 'const struct RegistroMeteorologico' has no member named 'radiacao_solar'
+   16 |   if (!isnan(r.radiacao_solar)) doc["radiacao_solar"] = r.radiacao_solar;
+      |                ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:16:59: error: 'const struct RegistroMeteorologico' has no member named 'radiacao_solar'
+   16 |   if (!isnan(r.radiacao_solar)) doc["radiacao_solar"] = r.radiacao_solar;
+      |                                                           ^~~~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:17:16: error: 'const struct RegistroMeteorologico' has no member named 'indice_uv'; did you mean 
+'indiceUV'?
+   17 |   if (!isnan(r.indice_uv)) doc["indice_uv"] = r.indice_uv;
+      |                ^~~~~~~~~
+      |                indiceUV
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:17:49: error: 'const struct RegistroMeteorologico' has no member named 'indice_uv'; did you mean 
+'indiceUV'?
+   17 |   if (!isnan(r.indice_uv)) doc["indice_uv"] = r.indice_uv;
+      |                                                 ^~~~~~~~~
+      |                                                 indiceUV
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:18:16: error: 'const struct RegistroMeteorologico' has no member named 'precipitacao'
+   18 |   if (!isnan(r.precipitacao)) doc["precipitacao"] = r.precipitacao;
+      |                ^~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:18:55: error: 'const struct RegistroMeteorologico' has no member named 'precipitacao'
+   18 |   if (!isnan(r.precipitacao)) doc["precipitacao"] = r.precipitacao;
+      |                                                       ^~~~~~~~~~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:20:16: error: 'const struct RegistroMeteorologico' has no member named 'itgu'
+   20 |   if (!isnan(r.itgu)) {
+      |                ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:21:21: error: 'const struct RegistroMeteorologico' has no member named 'itgu'
+   21 |     doc["itgu"] = r.itgu;
+      |                     ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:22:47: error: 'const struct RegistroMeteorologico' has no member named 'itgu'
+   22 |     doc["itgu_classificacao"] = classificar(r.itgu, "ITGU");
+      |                                               ^~~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:25:16: error: 'const struct RegistroMeteorologico' has no member named 'itu'
+   25 |   if (!isnan(r.itu)) {
+      |                ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:26:20: error: 'const struct RegistroMeteorologico' has no member named 'itu'
+   26 |     doc["itu"] = r.itu;
+      |                    ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:27:46: error: 'const struct RegistroMeteorologico' has no member named 'itu'
+   27 |     doc["itu_classificacao"] = classificar(r.itu, "ITU");
+      |                                              ^~~
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:30:16: error: 'const struct RegistroMeteorologico' has no member named 'indice_calor'; did you 
+mean 'indiceCalor'?
+   30 |   if (!isnan(r.indice_calor)) {
+      |                ^~~~~~~~~~~~
+      |                indiceCalor
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:31:29: error: 'const struct RegistroMeteorologico' has no member named 'indice_calor'; did you 
+mean 'indiceCalor'?
+   31 |     doc["indice_calor"] = r.indice_calor;
+      |                             ^~~~~~~~~~~~
+      |                             indiceCalor
+C:\Users\renat\Documents\esp32-llm-benchmark\12-testes-objetivos\T27-LLM02-real/candidato.inc:32:66: error: 'const struct RegistroMeteorologico' has no member named 'indice_calor'; did you 
+mean 'indiceCalor'?
+   32 |     doc["indice_calor_classificacao"] = classificarIndiceCalor(r.indice_calor);
+      |                                                                  ^~~~~~~~~~~~
+      |                                                                  indiceCalor
+
 Error during build: exit status 1
+[92mUsed library[0m [92mVersion[0m [90mPath[0m
+[93mArduinoJson[0m  6.21.6  [90mC:\Users\renat\Documents\Arduino\libraries\ArduinoJson[0m
 
 [92mUsed platform[0m [92mVersion[0m [90mPath[0m
 [93mesp32:esp32[0m   3.3.8   [90mC:\Users\renat\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.3.8[0m
