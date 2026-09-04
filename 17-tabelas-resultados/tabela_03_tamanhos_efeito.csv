@@ -1,0 +1,10 @@
+modelo_id,modelo,comparacao,U,rank_biserial,magnitude,direcao
+LLM01,GPT-5.6-Sol,Facil x Medio,,,NA_GRUPOS_IDENTICOS,
+LLM01,GPT-5.6-Sol,Facil x Dificil,85.0,0.7,grande,Facil > Dificil
+LLM01,GPT-5.6-Sol,Medio x Dificil,85.0,0.7,grande,Medio > Dificil
+LLM02,DeepSeek-V4-Pro,Facil x Medio,60.0,0.1999999999999999,pequeno,Facil > Medio
+LLM02,DeepSeek-V4-Pro,Facil x Dificil,90.0,0.8,grande,Facil > Dificil
+LLM02,DeepSeek-V4-Pro,Medio x Dificil,88.0,0.76,grande,Medio > Dificil
+LLM03,Claude-Sonnet-5,Facil x Medio,,,NA_GRUPOS_IDENTICOS,
+LLM03,Claude-Sonnet-5,Facil x Dificil,95.0,0.8999999999999999,grande,Facil > Dificil
+LLM03,Claude-Sonnet-5,Medio x Dificil,95.0,0.8999999999999999,grande,Medio > Dificil

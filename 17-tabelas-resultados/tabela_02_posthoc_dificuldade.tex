@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Comparações pós-hoc entre os níveis de dificuldade com correção de Holm.}
+\label{tab:posthoc_dificuldade}
+\begin{tabular}{lllllrrrl}
+\toprule
+modelo\_id & modelo & comparacao & grupo1 & grupo2 & U & p\_bruto & p\_holm & resultado \\
+\midrule
+LLM01 & GPT-5.6-Sol & Facil x Medio & Facil & Medio & NaN & NaN & NaN & NA\_GRUPOS\_IDENTICOS \\
+LLM01 & GPT-5.6-Sol & Facil x Dificil & Facil & Dificil & 85.000000 & 0.001617 & 0.003234 & SIGNIFICATIVO \\
+LLM01 & GPT-5.6-Sol & Medio x Dificil & Medio & Dificil & 85.000000 & 0.001617 & 0.003234 & SIGNIFICATIVO \\
+LLM02 & DeepSeek-V4-Pro & Facil x Medio & Facil & Medio & 60.000000 & 0.168078 & 0.168078 & NAO\_SIGNIFICATIVO \\
+LLM02 & DeepSeek-V4-Pro & Facil x Dificil & Facil & Dificil & 90.000000 & 0.000441 & 0.001322 & SIGNIFICATIVO \\
+LLM02 & DeepSeek-V4-Pro & Medio x Dificil & Medio & Dificil & 88.000000 & 0.001665 & 0.003330 & SIGNIFICATIVO \\
+LLM03 & Claude-Sonnet-5 & Facil x Medio & Facil & Medio & NaN & NaN & NaN & NA\_GRUPOS\_IDENTICOS \\
+LLM03 & Claude-Sonnet-5 & Facil x Dificil & Facil & Dificil & 95.000000 & 0.000097 & 0.000193 & SIGNIFICATIVO \\
+LLM03 & Claude-Sonnet-5 & Medio x Dificil & Medio & Dificil & 95.000000 & 0.000097 & 0.000193 & SIGNIFICATIVO \\
+\bottomrule
+\end{tabular}
+\end{table}

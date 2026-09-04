@@ -1,0 +1,12 @@
+analise,teste,escopo,estatistica,gl,p_valor,significativo_0_05
+Compilação entre LLMs,Cochran Q,Todas,3.0,2,0.2231301601484298,False
+Compilação entre LLMs,Cochran Q,Facil,,2,,False
+Compilação entre LLMs,Cochran Q,Medio,,2,,False
+Compilação entre LLMs,Cochran Q,Dificil,3.0,2,0.2231301601484298,False
+Funcionalidade entre LLMs,Friedman,Todas,3.5000000000002283,2,0.1737739434504253,False
+Funcionalidade entre LLMs,Friedman,Facil,,2,,False
+Funcionalidade entre LLMs,Friedman,Medio,4.000000000000056,2,0.1353352832366088,False
+Funcionalidade entre LLMs,Friedman,Dificil,3.0000000000000187,2,0.2231301601484277,False
+Efeito da dificuldade,Kruskal-Wallis,GPT-5.6-Sol,17.652173913043477,2,0.0001468517539571,True
+Efeito da dificuldade,Kruskal-Wallis,DeepSeek-V4-Pro,17.635313209996742,2,0.000148094998998,True
+Efeito da dificuldade,Kruskal-Wallis,Claude-Sonnet-5,24.857142857142847,2,4.002579904722819e-06,True
