@@ -33,3 +33,9 @@ Thumbs.db
 12-testes-objetivos/temp_*/
 
 *_backup.ps1
+*.aux
+*.blg
+*.bbl
+*.dvi
+*.log
+*.synctex.gz
